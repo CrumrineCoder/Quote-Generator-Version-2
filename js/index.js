@@ -38,41 +38,42 @@ function chooseArray(newQuote){
 var app = angular.module('quote', []);
 
 app.controller('quoteController', function($scope) {
-	$scope.Author = "";
-	$scope.Text = "";
+	$scope.Author = "Honk";
+	$scope.Text = "Clown";
 	
+	/*
 	$scope.Generate = function(){
 		if(chosenArray == 'DarkestDungeon'){
 			if(darkestDungeonQuotes.length != 0){
 				 index = Math.floor(Math.random() * darkestDungeonQuotes.length - 1) + 1;
-				  $scope.$apply(function() {
+				//  $scope.$apply(function() {
 					$scope.Text = darkestDungeonQuotes[index].quote;
 					$scope.Author = darkestDungeonQuotes[index].author;
-				  });
+				//  });
 				 usedDarkestDungeonQuotes.push(darkestDungeonQuotes[index]);
 				 darkestDungeonQuotes = darkestDungeonQuotes.slice(0, index).concat(darkestDungeonQuotes.slice(index + 1, darkestDungeonQuotes.length));
 			} else{
-				$scope.$apply(function() {
+			//	$scope.$apply(function() {
 					$scope.Author = "The Webmaster";
 					$scope.Text = "No more quotes avaliable. Either click the refresh button, select another set, or go do something else. Do whatever, man."
-				 });		
+			//	 });		
 			}
 		} else if(chosenArray == 'Civilization'){
 			if(civilizationQuotes.length != 0){
 				 console.log("Non empty array");
 				 index = Math.floor(Math.random() * civilizationQuotes.length - 1) + 1;
-				  $scope.$apply(function() {
+				//  $scope.$apply(function() {
 					 $scope.Text = civilizationQuotes[index].quote;
 					$scope.Author = civilizationQuotes[index].author
-				  });
+				//  });
 				 usedCivilizationQuotes.push(civilizationQuotes[index]);
 				 civilizationQuotes = civilizationQuotes.slice(0, index).concat(civilizationQuotes.slice(index + 1, civilizationQuotes.length));
 			} else{
-				$scope.$apply(function() {
+				//$scope.$apply(function() {
 					$scope.Author = "The Webmaster";
 					$scope.Text = "No more quotes avaliable. Either click the refresh button, select another set, or go do something else. Do whatever, man."
-				 });	
+			//	 });	
 			}
 		}
-	}
+	} */
 });
