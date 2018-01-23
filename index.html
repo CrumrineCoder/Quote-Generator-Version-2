@@ -11,19 +11,17 @@
     <div id="ad"> Quote Generator by <a href="https://crumrinecoder.github.io/Profile-Website-version2/" id="nic"> Nicolas Crumrine</span></a> </div>
 </nav>
 
-<body ng-app="quote" ng-controller="quoteController"> 
+<body ng-app="quoteApp" ng-controller="quoteController"> 
 	<button ng-click="refresh()" class="refresh" class="fa fa-refresh"> Refresh Quotes </button> 
 	<button ng-click="refreshAll()" class="refresh" class="fa fa-refresh"> Refresh All Quotes </button> 
 	
 	<button onclick="chooseArray('DarkestDungeon')">Darkest Dungeon Quotes </button> 
 	<button onclick="chooseArray('Civilization')">Civilization Quotes </button>
-	{{ 6 + 4 }}
-	<p>{{message}}</p>
-	<p>{{author}}</p>
-	<p>{{Honk}}</p>
+
+	<p>{{Text}}</p>
+	<p>{{Author}}</p>
 	
 	<button ng-click="Generate()"> Generate New Quote </button>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>
     <script src="js/index.js"></script>
 
