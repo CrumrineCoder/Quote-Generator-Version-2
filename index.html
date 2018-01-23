@@ -3,131 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Twitch Viewer Version 2</title>
+    <title>Quote Generator Version 2</title>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Varela+Round'>
     <link rel="stylesheet" href="css/style.css"> </head>
 <nav>
-    <div id="ad"> Twitch Viewer by <a href="https://crumrinecoder.github.io/Profile-Website-version2/" id="nic"> Nicolas Crumrine</span></a> </div>
+    <div id="ad"> Quote Generator by <a href="https://crumrinecoder.github.io/Profile-Website-version2/" id="nic"> Nicolas Crumrine</span></a> </div>
 </nav>
 
-<body ng-app="stream" ng-controller="streamController"> <button ng-click="refresh()" id="refresh" class="fa fa-refresh"> Refresh Streams </button>
-    <form id="twitchSearch" class="formInline"> <input placeholder="Search for streams." type="text" id="searchBar"> <button id="searchButton" type="submit"><span class="fa fa-search"></span></button> </form>
-    <div id="statusButtonContainer"> <button class="statusButtons active" id="allButton" onclick="showAll()"> All</button> <button class="statusButtons" id="onlineButton" onclick="onlineOnly();"> Online Only</button> <button class="statusButtons" id="offlineButton" onclick="offlineOnly();"> Offline Only</button> </div> <button ng-click="Condensed = !Condensed" id="condenseButton"> Toggle Preview </button> <span ng-repeat="Stream in Streams | orderBy: '!online'">
+<body ng-app="quote" ng-controller="quoteController"> 
+	<button ng-click="refresh()" class="refresh" class="fa fa-refresh"> Refresh Quotes </button> 
+	<button ng-click="refreshAll()" class="refresh" class="fa fa-refresh"> Refresh All Quotes </button> 
 	
-         <div class="container" id="{{Stream.name}}" ng-class="{'online': Stream.status == 'online', 'offline': Stream.status == 'offline' }">
-		 	<button class="delete fa fa-times" ng-click="remove(Stream)"></button>
-            <a href="{{Stream.url}}" target="_blank">
-               <img class="logo" ng-src="{{Stream.logo}}"></img>
-			  
-               <span class="summary"> {{Stream.name}} <span ng-show="{{Stream.status == 'online'}}">is</span> <span ng-hide="{{Stream.status == 'online'}}">was</span> playing {{Stream.game}} <span ng-show="{{Stream.status == 'online'}}">for {{Stream.viewers}} viewers</span> </span>
-    <p class="title">{{Stream.title}}</p>
-    <hr>
-    <div class="smallDetails"> Followers: <span class="followers"> {{Stream.followers}} </span> Language: <span class="language"> {{Stream.language}}</span> Mature Only: <span class="mature"> {{Stream.mature}} </span> </div> <img ng-hide="Condensed" class="preview" ng-src="{{Stream.preview}}"> </img>
-    </a>
-    </div>
-    </span>
+	<button onclick="chooseArray('DarkestDungeon')">Darkest Dungeon Quotes </button> 
+	<button onclick="chooseArray('Civilization')">Civilization Quotes </button>
+	
+	{{quote.Text}}
+	{{quote.Author}}
+	
+	<button ng-click="Generate()"> Generate New Quote </button>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>
     <script src="js/index.js"></script>
+
 </body>
-
 </html>
-
-<!-- Notes
-*JS for buttons
-*Font color and choice
-*Background color
-*Box shadows? 
-
--->
-
-<div class="nav">
-
-  <span id="q-gen">Quote Generator by</span> <a href="https://codepen.io/CrumrineCoder/pen/XKbwEe" id="nic"> Nicolas Crumrine</span></a>
-
-</div>
-<div class="container-fluid">
-  <!-- Generate New Quote Button 
-*
-
-  -->
-  <div class="body">
-
-    <!-- Quote 
-*Make it so the user can click on the link and be taken to the Goodreads quote
-     - Make this clear to user
-
--->
-    <button onclick="chooseArray('DarkestDungeon')">Darkest Dungeon Quotes </button>
-     <button onclick="chooseArray('Civilization')">Civilization Quotes </button>
-    <div class="row">
-      <div class="col-xs-2">
-
-        <img src="http://i1149.photobucket.com/albums/o585/CrumrineCoder/QuotesTop%201_zpsvtspucqe.png" class="quote-sign-top">
-
-      </div>
-      <div class="col-xs-8 quote">
-        <!--
- <div style="display: table; height: 110px; overflow: hidden;">
-     <div style="display: table-cell; vertical-align: middle; horizontal-align: center;"> -->
-        <div id="quote">
-
-        </div>
-        <!--   
-      </div> 
-   </div>
--->
-        <div id="quote"></div>
-
-      </div>
-      <div class="col-xs-2">
-        <img src="http://i1149.photobucket.com/albums/o585/CrumrineCoder/QuotesBottom%201_zpsjtaqfjqv.png" class="quote-sign-bottom">
-      </div>
-      <!-- Signature 
-*Be able to click on the name and take them to wiki page?
-  - Make it obvious that you can
--->
-
-      <div class="row">
-        <div class="col-xs-4"></div>
-        <div class="col-xs-4 signature" id="signs"> </div>
-
-      </div>
-
-      <!-- Generate New Quote Button 
-* 
-
--->
-
-      <div class="row">
-        <div class="breakpoint_quote">
-          <div class="col-xs-4"></div>
-        </div>
-        <div class="col-xs-4 text-center generateQuote btn btn-primary" id="quoteGen">
-          <div onclick="nextQuote()">Generate New Quote</div>
-          <div style="font-size: 20px"> (Spacebar or click) </div>
-        </div>
-        <!-- Fix this clusterfuck -->
-        <div class="breakpoint_quote">
-          <div class="col-xs-4">
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Share Buttions 
-*Add hover to the buttons and make them work
-
--->
-
-      <div class="row">
-        <div class="col-xs-5"></div>
-        <div class="col-xs-2 social-media twitter-btn" id="test">
-          <div class="fa fa-twitter"> </div>
-          <!--    <btn class="fa fa-facebook "></btn> -->
-        </div>
-        <div class="col-xs-5"></div>
-      </div>
-
-    </div>
