@@ -12,7 +12,7 @@ function chooseArray(newQuote) {
 }
 var app = angular.module('quoteApp', []);
 app.controller('quoteController', function($scope) {
-	$scope.chosenArray = "DarkestDungeon";
+	
 	$scope.usedDarkestDungeonQuotes = [];
 	$scope.usedCivilizationQuotes = [];
 	$scope.darkestDungeonQuotes = [{
@@ -35,8 +35,16 @@ app.controller('quoteController', function($scope) {
 		author: "Kahlil Gibran",
 		quote: "We only live to discover beauty. All else is a form of waiting"
 	}];
-    $scope.Author = "The Webmaster";
-    $scope.Text = "This Quote Generator pulls quotes from different sources. Click on the buttons on the nav bar to change the source. Click on the generate button to get a new quote.";
+	$scope.index = 0;
+	$scope.currentQuotes = $scope.darkestDungeonQuotes;
+	$scope.changeArray = function(param) {  
+		if(param == 'DarkestDungeon'){
+			$scope.currentQuotes = $scope.darkestDungeonQuotes;
+		} else if(param == 'Civilization'){
+			$scope.currentQuotes = $scope.civilizationQuotes;
+		}
+	 }
+	/*
     $scope.Generate = function() {
         if ($scope.chosenArray == 'DarkestDungeon') {
             if ($scope.darkestDungeonQuotes.length != 0) {
@@ -74,6 +82,6 @@ app.controller('quoteController', function($scope) {
                     $scope.Text = "No more quotes avaliable. Either click the refresh button, select another set, or go do something else. Do whatever, man."
                 });
             }
-        }
-    }
+        } 
+    } */
 });

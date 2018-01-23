@@ -15,13 +15,12 @@
 	<button ng-click="refresh()" class="refresh" class="fa fa-refresh"> Refresh Quotes </button> 
 	<button ng-click="refreshAll()" class="refresh" class="fa fa-refresh"> Refresh All Quotes </button> 
 	
-	<button onclick="chooseArray('DarkestDungeon')">Darkest Dungeon Quotes </button> 
-	<button onclick="chooseArray('Civilization')">Civilization Quotes </button>
+	<button ng-click="changeArray('DarkestDungeon')">Darkest Dungeon Quotes </button> 
+	<button ng-click="changeArray('Civilization')">Civilization Quotes </button>
 
-	<p>{{Text}}</p>
-	<p>{{Author}}</p>
-	
-	<button ng-click="Generate()"> Generate New Quote </button>
+	<p>{{currentQuotes[index].quote}}</p>
+	<p>{{currentQuotes[index].author}}</p>
+	<button type="button" name="button" value="Next" ng-click="index = (index + 1) % currentQuotes.length">Generate New Quote</button>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>
     <script src="js/index.js"></script>
 
