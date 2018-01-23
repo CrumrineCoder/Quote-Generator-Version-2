@@ -38,8 +38,8 @@ function chooseArray(newQuote){
 var app = angular.module('quote', []);
 
 app.controller('quoteController', function($scope) {
-	$scope.Author = "Honk";
-	$scope.Text = "Clown";
+	$scope.author = "Honk";
+	$scope.message = "Clown";
 	
 	/*
 	$scope.Generate = function(){
