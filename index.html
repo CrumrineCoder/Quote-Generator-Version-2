@@ -12,17 +12,28 @@
 </nav>
 
 <body ng-app="quoteApp" ng-controller="quoteController"> 
-	<button ng-click="randomize()">Randomize the Order of the Quotes</button>
-	<button ng-click="changeArray('DarkestDungeon')">Darkest Dungeon Quotes </button> 
-	<button ng-click="changeArray('Civilization')">Sid Meier's Civilization Quotes </button>
-	<button ng-click="changeArray('ElderScrolls')">Elder Scrolls Quotes </button> 
-	<button ng-click="changeArray('Discworld')">Discworld Quotes </button>
-	<button ng-click="changeArray('Misc')">Misc Quotes (Protomen, Bioshock, Final Fantasy, etc.)</button>
-	<button  ng-click="index = (index + 1) % currentQuotes.length">Generate New Quote</button>
-	<button ng-click="tweet()" class="fa fa-twitter"></button> 
-	<p>{{currentQuotes[index].quote}}</p>
-	<p>{{currentQuotes[index].author}}</p>
-
+	<div id="quoteButtonContainer">
+		<button class="quoteButtons" ng-click="changeArray('DarkestDungeon')">Darkest Dungeon Quotes </button> 
+		<button class="quoteButtons" ng-click="changeArray('Civilization')">Sid Meier's Civilization Quotes </button>
+		<button class="quoteButtons" ng-click="changeArray('ElderScrolls')">Elder Scrolls Quotes </button> 
+		<button class="quoteButtons" ng-click="changeArray('Discworld')">Discworld Quotes </button>
+		<button class="quoteButtons" ng-click="changeArray('Misc')">Miscellaneous Quotes</button>
+	</div>
+	<div id="generateContainer">
+	
+		<button id="twitterButton" ng-click="tweet()" class="fa fa-twitter"></button> 
+		<br>
+		<button id="generateNewQuote" ng-click="index = (index + 1) % currentQuotes.length"><div id="large">Generate New Quote</div><div id="small">(Spacebar or Click)</div></button>
+		
+	</div>
+	<div id="quoteContainer">
+		<img src="images/leftQuote.png" id="quote-sign-top"> </img>
+		<img src="images/rightQuote.png" id="quote-sign-bottom"> </img>
+		<p id="quote">{{currentQuotes[index].quote}}</p>
+	</div>
+	<p id="author">{{currentQuotes[index].author}}</p>
+	
+	
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>
     <script src="js/index.js"></script>
 

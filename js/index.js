@@ -10,9 +10,6 @@ function chooseArray(newQuote) {
 }
 var app = angular.module('quoteApp', []);
 app.controller('quoteController', function($scope) {
-	
-	$scope.usedDarkestDungeonQuotes = [];
-	$scope.usedCivilizationQuotes = [];
 	$scope.darkestDungeonQuotes = [{
 		author: "The Ancestor",
 		quote: "Prodigious size alone does not dissuade the sharpened blade"
@@ -109,7 +106,7 @@ app.controller('quoteController', function($scope) {
 		author: "Shakespeare",
 		quote: "A Horse! A Horse! My Kingdom for a Horse!"
 	}, {
-		author: " Buck Henry and Calder Willingham",
+		author: "Buck Henry and Calder Willingham",
 		quote: "Ben, I want to say one word to you, just one word: plastics."
 	}, {
 		author: "William Butler Yeats",
@@ -291,7 +288,7 @@ app.controller('quoteController', function($scope) {
 	
 	$scope.discworldQuotes = [{
 		author: "Terry Pratchett",
-		quote: " \"The graveyards are full of people who rushed in bravely but unwisely.\" \"Ook.\" \"What did he say?\" \"He said 'the graveyards are full of everybody eventually'\"."
+		quote: "\"The graveyards are full of people who rushed in bravely but unwisely.\" \"Ook.\" \"What did he say?\" \"He said 'the graveyards are full of everybody eventually'\"."
 	}, {
 		author: "Terry Pratchett",
 		quote: "Coffee is a way of stealing time that should by rights belong to your older self."
@@ -300,7 +297,7 @@ app.controller('quoteController', function($scope) {
 		quote: "It was because he wanted there to be conspirators. It was much better to imagine men in some smoky room somewhere, made mad and cynical by privilege and power, plotting over the brandy. You had to cling to this sort of image, because if you didn’t then you might have to face the fact that bad things happened because ordinary people, the kind who brushed the dog and told their children bedtime stories, were capable of then going out and doing horrible things to other ordinary people. It was so much easier to blame it on Them. It was bleakly depressing to think that They were Us. If it was Them, then nothing was anyone’s fault. If it was Us, what did that make Me? After all, I’m one of Us. I must be. I’ve certainly never thought of myself as one of Them. No one ever thinks of themselves as one of Them. We’re always one of Us. It’s Them that do the bad things"
 	}, {
 		author: "Terry Pratchett",
-		quote: " \"Did you really punch the president of the Assassin's Guild?\" \"Yes, sir.\" \"Why?\" \"Didn't have a dagger, sir.\""
+		quote: "\"Did you really punch the president of the Assassin's Guild?\" \"Yes, sir.\" \"Why?\" \"Didn't have a dagger, sir.\""
 	}, {
 		author: "Terry Pratchett",
 		quote: "Build a man a fire, and he'll be warm for a day. Set a man on fire, and he'll be warm for the rest of his life."
@@ -309,7 +306,7 @@ app.controller('quoteController', function($scope) {
 		quote: "The senior wizard in a world of magic had the same prospects of long-term employment as a pogo stick tester in a minefield."
 	}, {
 		author: "Terry Pratchett",
-		quote: " YOU THINK SO? THEN TAKE THE UNIVERSE AND GRIND IT DOWN TO THE FINEST POWDER AND SIEVE IT THROUGH THE FINEST SIEVE AND THEN SHOW ME ONE ATOM OF JUSTICE, ONE MOLECULE OF MERCY. AND YET—Death waved a hand. AND YET YOU ACT AS IF THERE IS SOME IDEAL ORDER IN THE WORLD, AS IF THERE IS SOME...SOME RIGHTNESS IN THE UNIVERSE BY WHICH IT MAY BE JUDGED. \"Yes, but people have got to believe that, or what's the point—\" MY POINT EXACTLY. "
+		quote: "YOU THINK SO? THEN TAKE THE UNIVERSE AND GRIND IT DOWN TO THE FINEST POWDER AND SIEVE IT THROUGH THE FINEST SIEVE AND THEN SHOW ME ONE ATOM OF JUSTICE, ONE MOLECULE OF MERCY. AND YET—Death waved a hand. AND YET YOU ACT AS IF THERE IS SOME IDEAL ORDER IN THE WORLD, AS IF THERE IS SOME...SOME RIGHTNESS IN THE UNIVERSE BY WHICH IT MAY BE JUDGED. \"Yes, but people have got to believe that, or what's the point—\" MY POINT EXACTLY. "
 	}, {
 		author: "Terry Pratchett",
 		quote: "Personal’s not the same as important."
@@ -327,7 +324,7 @@ app.controller('quoteController', function($scope) {
 		quote: "Just because you can explain it doesn't mean it's not still a miracle."
 	}, {
 		author: "Terry Pratchett",
-		quote: " The Patrician took a sip of his beer. \“I have told this to few people, gentlemen, and I suspect I never will again, but one day when I was a young boy on holiday in Uberwald I was walking along the bank of a stream when I saw a mother otter with her cubs. A very endearing sight, I’m sure you will agree, and even as I watched, the mother otter dived into the water and came up with a plump salmon, which she subdued and dragged on to a half-submerged log. As she ate it, while of course it was still alive, the body split and I remember to this day the sweet pinkness of its roes as they spilled out, much to the delight of the baby otters who scrambled over themselves to feed on the delicacy. One of nature’s wonders, gentlemen: mother and children dining upon mother and children. And that’s when I first learned about evil. It is built into the very nature of the universe. Every world spins in pain. If there is any kind of supreme being, I told myself, it is up to all of us to become his moral superior.\” The two wizards exchanged a glance. Vetinari was staring into the depths of his beer mug and they were glad that they did not know what he saw in there."
+		quote: "The Patrician took a sip of his beer. \“I have told this to few people, gentlemen, and I suspect I never will again, but one day when I was a young boy on holiday in Uberwald I was walking along the bank of a stream when I saw a mother otter with her cubs. A very endearing sight, I’m sure you will agree, and even as I watched, the mother otter dived into the water and came up with a plump salmon, which she subdued and dragged on to a half-submerged log. As she ate it, while of course it was still alive, the body split and I remember to this day the sweet pinkness of its roes as they spilled out, much to the delight of the baby otters who scrambled over themselves to feed on the delicacy. One of nature’s wonders, gentlemen: mother and children dining upon mother and children. And that’s when I first learned about evil. It is built into the very nature of the universe. Every world spins in pain. If there is any kind of supreme being, I told myself, it is up to all of us to become his moral superior.\” The two wizards exchanged a glance. Vetinari was staring into the depths of his beer mug and they were glad that they did not know what he saw in there."
 	}, {
 		author: "Terry Pratchett",
 		quote: "'But there are causes worth dying for,' said Butterfly. 'No, there aren't! Because you've only got one life but you can pick up another five causes on any street corner!' 'Good grief, how can you live with a philosophy like that?' Rincewind took a deep breath. 'Continuously!'"
@@ -336,7 +333,7 @@ app.controller('quoteController', function($scope) {
 		quote: "If you trust in yourself. . .and believe in your dreams. . .and follow your star. . . you'll still get beaten by people who spent their time working hard and learning things and weren't so lazy."
 	}, {
 		author: "Terry Pratchett",
-		quote: " \"You can't give her that!\" she screamed. \"It's not safe!\" IT'S A SWORD, said the Hogfather. THEY'RE NOT MEANT TO BE SAFE. \"She's a child!\" shouted Crumley. IT'S EDUCATIONAL. \"What if she cuts herself?\" THAT WILL BE AN IMPORTANT LESSON."
+		quote: "\"You can't give her that!\" she screamed. \"It's not safe!\" IT'S A SWORD, said the Hogfather. THEY'RE NOT MEANT TO BE SAFE. \"She's a child!\" shouted Crumley. IT'S EDUCATIONAL. \"What if she cuts herself?\" THAT WILL BE AN IMPORTANT LESSON."
 	}, {
 		author: "Terry Pratchett",
 		quote: "HUMAN BEINGS ARE SO INTERESTING. DID YOU KNOW, IN A UNIVERSE SO FULL OF WONDERS, THEY'VE MANAGED TO INVENT BOREDOM? FASCINATING."
@@ -345,7 +342,7 @@ app.controller('quoteController', function($scope) {
 		quote: "The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it."
 	}];
 	
-	$scope.discworldQuotes = [{
+	$scope.miscQuotes = [{
 		author: "Konrad from Spec Ops: The Line",
 		quote: "The truth, Walker, is that you're here because you wanted to feel like something you're not. A hero."
 	}, {
@@ -371,7 +368,7 @@ app.controller('quoteController', function($scope) {
 		quote: "After all we've been through. Everything that I've done. It can't be for nothing."
 	}, {
 		author: "Andrew Ryan from Bioshock",
-		quote: "What is the greatest lie every created? What is the most vicious obscenity ever perpetrated on mankind? Slavery? The Holocaust? Dictatorship? No. It's the tool with which all that wickedness is built: altruism. Whenever anyone wants others to do their work, they call upon their altruism. Never mind your own needs, they say, think of the needs of... of whoever. The state. The poor. Of the army, of the king, of God! The list goes on and on. How many catastrophes were launched with the words 'think of yourself'? It's the 'king and country' crowd who light the torch of destruction. It is this great inversion, this ancient lie, which has chained humanity to an endless cycle of guilt and failure. My journey to Rapture was my second exodus. In 1919, I fled a country that had traded in despotism for insanity. The Marxist revolution simply traded one lie for another. Instead of one man, the tsar, owning the work of all the people, all the people owned the work of all of the people. So, I came to America: where a man could own his own work, where a man could benefit from the brilliance of his own mind, the strength of his own muscles, the might of his own will. I had thought I had left the parasites of Moscow behind me. I had thought I had left the Marxist altruists to their collective farms and their five-year plans. But as the German fools threw themselves on Hitler's sword 'for the good of the Reich', the Americans drank deeper and deeper of the Bolshevik poison, spoon-fed to them by Roosevelt and his New Dealists. And so, I asked myself: in what country was there a place for men like me - men who refused to say "yes" to the parasites and the doubters, men who believed that work was sacred and property rights inviolate. And then one day, the happy answer came to me, my friends: there was no country for people like me! And that was the moment I decided... to build one."
+		quote: "What is the greatest lie every created? What is the most vicious obscenity ever perpetrated on mankind? Slavery? The Holocaust? Dictatorship? No. It's the tool with which all that wickedness is built: altruism. Whenever anyone wants others to do their work, they call upon their altruism. Never mind your own needs, they say, think of the needs of... of whoever. The state. The poor. Of the army, of the king, of God! The list goes on and on. How many catastrophes were launched with the words 'think of yourself'? It's the 'king and country' crowd who light the torch of destruction. It is this great inversion, this ancient lie, which has chained humanity to an endless cycle of guilt and failure. My journey to Rapture was my second exodus. In 1919, I fled a country that had traded in despotism for insanity. The Marxist revolution simply traded one lie for another. Instead of one man, the tsar, owning the work of all the people, all the people owned the work of all of the people. So, I came to America: where a man could own his own work, where a man could benefit from the brilliance of his own mind, the strength of his own muscles, the might of his own will. I had thought I had left the parasites of Moscow behind me. I had thought I had left the Marxist altruists to their collective farms and their five-year plans. But as the German fools threw themselves on Hitler's sword 'for the good of the Reich', the Americans drank deeper and deeper of the Bolshevik poison, spoon-fed to them by Roosevelt and his New Dealists. And so, I asked myself: in what country was there a place for men like me - men who refused to say \"yes\" to the parasites and the doubters, men who believed that work was sacred and property rights inviolate. And then one day, the happy answer came to me, my friends: there was no country for people like me! And that was the moment I decided... to build one."
 	}, {
 		author: "Booker from Bioshock",
 		quote: "A city at the bottom of the ocean? Ridiculous...."
@@ -395,31 +392,31 @@ app.controller('quoteController', function($scope) {
 		quote: "I am Andrew Ryan, and I'm here to ask you a question. Is a man not entitled to the sweat of his brow? \"No,\" says the man in Washington, \"it belongs to the poor.\" \"No,\" says the man in the Vatican, \"it belongs to God.\" \"No,\" says the man in Moscow, \"it belongs to everyone.\" I rejected those answers; instead, I chose something different. I chose the impossible. I chose... Rapture. A city where the artist would not fear the censor; where the scientist would not be bound by petty morality; where the great would not be constrained by the small! And with the sweat of your brow, Rapture can become your city as well."
 	}, {
 		author: "Protomen",
-		quote: "We have control \n We keep you safe \n We are your hope \n We are in control"
+		quote: "We have control \nWe keep you safe \nWe are your hope \nWe are in control"
 	}, {
 		author: "Protomen",
-		quote: "The crowd had gathered there to watch him fall, to watch their hopes destroyed, \n They watched them beat him, they watched them break him, they watched his last defense deployed, \n There was not a man among them who would let himself be heard, but from the crowd, from their collective fear arose these broken words: \n 'We are the dead!'"
+		quote: "The crowd had gathered there to watch him fall, to watch their hopes destroyed, \nThey watched them beat him, they watched them break him, they watched his last defense deployed, \nThere was not a man among them who would let himself be heard, but from the crowd, from their collective fear arose these broken words: \n'We are the dead!'"
 	}, {
 		author: "Protomen",
-		quote: "Even here, it is not safe. /n Even this grave has been defaced. /n Someone has written on this stone, in some angry hand... /n 'HOPE RIDES ALONE!'"
+		quote: "Even here, it is not safe. \nEven this grave has been defaced. \nSomeone has written on this stone, in some angry hand... \n'HOPE RIDES ALONE!'"
 	}, {
 		author: "Protomen",
-		quote: "You have heard me, tell this story /n Many times before you sleep. /n No matter how dark this City gets, /n  Even now, there's hope for man."
+		quote: "You have heard me, tell this story \nMany times before you sleep. \nNo matter how dark this City gets, \n Even now, there's hope for man."
 	}, {
 		author: "Protomen",
 		quote: "If these people... tell this story... to their children... as they sleep... then maybe someday, they'll see a hero... is just a man... who knows he is free."
 	}, {
 		author: "Protomen",
-		quote: "They've waited so long for this day, /n Someone to take the death away! /n No son would ever have to say /n My father worked into his grave..."
+		quote: "They've waited so long for this day, \nSomeone to take the death away! \nNo son would ever have to say \nMy father worked into his grave..."
 	}, {
 		author: "Protomen",
-		quote: "If a shadow blocks out the sun, there will be Light! /n If it stays until the sun has set, there will be Light! /n If the sun never shows its face again, there will be Light! /n No matter how dark this City gets, there will be..."
+		quote: "If a shadow blocks out the sun, there will be Light! \nIf it stays until the sun has set, there will be Light! \nIf the sun never shows its face again, there will be Light! \nNo matter how dark this City gets, there will be..."
 	}, {
 		author: "Protomen",
-		quote: "I will not be told where to stand! I will not be told what to say! /n Not by man or machine, not by you, not by anyone tonight! /n You've got to do better than fear. /n You've got to step out of the shadows and fight! \n And when they see your face again, \n  they will know what it means to have fear dragged out into the light."
+		quote: "I will not be told where to stand! I will not be told what to say! \nNot by man or machine, not by you, not by anyone tonight! \nYou've got to do better than fear. \nYou've got to step out of the shadows and fight! \nAnd when they see your face again, \n they will know what it means to have fear dragged out into the light."
 	}, {
 		author: "Protomen",
-		quote: "I've got this burning like my veins are filled with nothing but gasoline! /n And with a spark it's gonna be the biggest fire they've ever seen!"
+		quote: "I've got this burning like my veins are filled with nothing but gasoline! \nAnd with a spark it's gonna be the biggest fire they've ever seen!"
 	}, {
 		author: "Delita from Final Fantasy",
 		quote: "Don't blame me. Blame yourself or God."
@@ -451,7 +448,10 @@ app.controller('quoteController', function($scope) {
 	
 	
 	$scope.index = 0;
-	$scope.currentQuotes = $scope.darkestDungeonQuotes;
+	$scope.currentQuotes = [{
+		author: "Nicolas Crumrine",
+		quote: "Quotes are divided into their respective domains except for the misc quotes, which are collected from sources not as quotable as the others. To change sources, use the buttons at the top. The order will be randomized and will loop back over itself."
+	}];
 	function shuffle(array) {
 	  var currentIndex = array.length, temporaryValue, randomIndex;
 	  // While there remain elements to shuffle...
@@ -483,6 +483,9 @@ app.controller('quoteController', function($scope) {
 		}
 		else if(param == 'Discworld'){
 			$scope.currentQuotes = $scope.discworldQuotes;
+		}
+		else if(param == 'Misc'){
+			$scope.currentQuotes = $scope.miscQuotes;
 		}
 		$scope.randomize();
 	 }
