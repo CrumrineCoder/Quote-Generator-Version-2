@@ -448,8 +448,7 @@ app.controller('quoteController', function($scope) {
 		author: "Faye Valentine from Cowboy Bebop",
 		quote: "They often say that humans can’t live alone. But you can live pretty long by yourself. Instead of feeling alone in a group, it’s better to be alone in your solitude."
 	}]
-	
-	
+
 	$scope.index = 0;
 	$scope.currentQuotes = [{
 		author: "Nicolas Crumrine",
@@ -475,6 +474,9 @@ app.controller('quoteController', function($scope) {
 	$scope.randomize = function() {  
 		$scope.currentQuotes = shuffle($scope.currentQuotes); 
 	}
+	// body = light 
+	// #quoteButtonContainer, #generateNewQuote, #twitterButton, #quoteContainer, #author = dark
+	// #generateNewQuote:hover, #twitterButton:hover = super dark
 	$scope.changeArray = function(param) {  
 		if(param == 'ElderScrolls'){
 			$scope.currentQuotes = $scope.elderScrollsQuotes;
