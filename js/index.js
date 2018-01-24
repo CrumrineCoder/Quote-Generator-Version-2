@@ -345,6 +345,110 @@ app.controller('quoteController', function($scope) {
 		quote: "The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it."
 	}];
 	
+	$scope.discworldQuotes = [{
+		author: "Konrad from Spec Ops: The Line",
+		quote: "The truth, Walker, is that you're here because you wanted to feel like something you're not. A hero."
+	}, {
+		author: "Colin from The Wolf Among Us",
+		quote: "Life is easier with friends, Bigby, and we live a long fuckin' time. I know you like this whole Lone Wolf thing you got going for yourself, but I've seen the way you look at Snow, okay? You're not foolin' me."
+	}, {
+		author: "Bill from The Last of Us",
+		quote: "You know, as bad as those things are, at least they're predictable. It's the normal people that scare me"
+	}, {
+		author: "Joel from The Last of Us",
+		quote: "I struggled for a long time with surviving. And no matter what, you keep finding something to fight for."
+	}, {
+		author: "Ellie from The Last of Us",
+		quote: "Everyone I have cared for has either died or left me. Everyone - fucking except for you. So don't tell me that I would be safer with someone else because the truth is I would just be more scared."
+	}, {
+		author: "Riley Abel from The Last of Us",
+		quote: "There are a million ways we should've died before today, and a million ways we can die before tomorrow. But we fight, for every second we get to spend with each other. Whether it's two minutes or two days, we don't give that up. I don't want to give that up."
+	}, {
+		author: "Tess from The Last of Us",
+		quote: "We're shitty people Joel, it's been that way for a long time."
+	}, {
+		author: "Ellie from The Last of Us",
+		quote: "After all we've been through. Everything that I've done. It can't be for nothing."
+	}, {
+		author: "Andrew Ryan from Bioshock",
+		quote: "What is the greatest lie every created? What is the most vicious obscenity ever perpetrated on mankind? Slavery? The Holocaust? Dictatorship? No. It's the tool with which all that wickedness is built: altruism. Whenever anyone wants others to do their work, they call upon their altruism. Never mind your own needs, they say, think of the needs of... of whoever. The state. The poor. Of the army, of the king, of God! The list goes on and on. How many catastrophes were launched with the words 'think of yourself'? It's the 'king and country' crowd who light the torch of destruction. It is this great inversion, this ancient lie, which has chained humanity to an endless cycle of guilt and failure. My journey to Rapture was my second exodus. In 1919, I fled a country that had traded in despotism for insanity. The Marxist revolution simply traded one lie for another. Instead of one man, the tsar, owning the work of all the people, all the people owned the work of all of the people. So, I came to America: where a man could own his own work, where a man could benefit from the brilliance of his own mind, the strength of his own muscles, the might of his own will. I had thought I had left the parasites of Moscow behind me. I had thought I had left the Marxist altruists to their collective farms and their five-year plans. But as the German fools threw themselves on Hitler's sword 'for the good of the Reich', the Americans drank deeper and deeper of the Bolshevik poison, spoon-fed to them by Roosevelt and his New Dealists. And so, I asked myself: in what country was there a place for men like me - men who refused to say "yes" to the parasites and the doubters, men who believed that work was sacred and property rights inviolate. And then one day, the happy answer came to me, my friends: there was no country for people like me! And that was the moment I decided... to build one."
+	}, {
+		author: "Booker from Bioshock",
+		quote: "A city at the bottom of the ocean? Ridiculous...."
+	}, {
+		author: "Booker from Bioshock",
+		quote: "One thing I've learned: if you don't draw first, you don't get to draw at all"
+	}, {
+		author: "Rosalind Lutece from Bioshock",
+		quote: "A middle C vibrates at 262 hz, no matter what the universe."
+	}, {
+		author: "Atlas from Bioshock",
+		quote: "Would you kindly?"
+	}, {
+		author: "Andrew Ryan from Bioshock",
+		quote: "A Man Choses, A Slave Obeys"
+	}, {
+		author: "Andrew Ryan from Bioshock",
+		quote: "No Gods Or Kings, Only Man"
+	}, {
+		author: "Andrew Ryan from Bioshock",
+		quote: "I am Andrew Ryan, and I'm here to ask you a question. Is a man not entitled to the sweat of his brow? \"No,\" says the man in Washington, \"it belongs to the poor.\" \"No,\" says the man in the Vatican, \"it belongs to God.\" \"No,\" says the man in Moscow, \"it belongs to everyone.\" I rejected those answers; instead, I chose something different. I chose the impossible. I chose... Rapture. A city where the artist would not fear the censor; where the scientist would not be bound by petty morality; where the great would not be constrained by the small! And with the sweat of your brow, Rapture can become your city as well."
+	}, {
+		author: "Protomen",
+		quote: "We have control \n We keep you safe \n We are your hope \n We are in control"
+	}, {
+		author: "Protomen",
+		quote: "The crowd had gathered there to watch him fall, to watch their hopes destroyed, \n They watched them beat him, they watched them break him, they watched his last defense deployed, \n There was not a man among them who would let himself be heard, but from the crowd, from their collective fear arose these broken words: \n 'We are the dead!'"
+	}, {
+		author: "Protomen",
+		quote: "Even here, it is not safe. /n Even this grave has been defaced. /n Someone has written on this stone, in some angry hand... /n 'HOPE RIDES ALONE!'"
+	}, {
+		author: "Protomen",
+		quote: "You have heard me, tell this story /n Many times before you sleep. /n No matter how dark this City gets, /n  Even now, there's hope for man."
+	}, {
+		author: "Protomen",
+		quote: "If these people... tell this story... to their children... as they sleep... then maybe someday, they'll see a hero... is just a man... who knows he is free."
+	}, {
+		author: "Protomen",
+		quote: "They've waited so long for this day, /n Someone to take the death away! /n No son would ever have to say /n My father worked into his grave..."
+	}, {
+		author: "Protomen",
+		quote: "If a shadow blocks out the sun, there will be Light! /n If it stays until the sun has set, there will be Light! /n If the sun never shows its face again, there will be Light! /n No matter how dark this City gets, there will be..."
+	}, {
+		author: "Protomen",
+		quote: "I will not be told where to stand! I will not be told what to say! /n Not by man or machine, not by you, not by anyone tonight! /n You've got to do better than fear. /n You've got to step out of the shadows and fight! \n And when they see your face again, \n  they will know what it means to have fear dragged out into the light."
+	}, {
+		author: "Protomen",
+		quote: "I've got this burning like my veins are filled with nothing but gasoline! /n And with a spark it's gonna be the biggest fire they've ever seen!"
+	}, {
+		author: "Delita from Final Fantasy",
+		quote: "Don't blame me. Blame yourself or God."
+	}, {
+		author: "Kefka from Final Fantasy",
+		quote: "You sounds like chapters from a self-help booklet!"
+	}, {
+		author: "Delita from Final Fantasy",
+		quote: "Disrupt the \"order\"? This \"order\" you talk about is just a matter of your own convienence!! Using \"God\" as an \"order\" to control the people is absurd. You have no right to take advantage of the innocent."
+	}, {
+		author: "Wiegraf from Final Fantasy",
+		quote: "You don't understand how hard it is to fulfill your ideals. Even if your ideals are great, they're just dreams if you can't fulfill them! So how can you fulfill them? You need power! That's the politics of the world! I can see it clearly now! You can't fulfill your dreams without power! You say I'm a dog of the church! Go ahead!! I don't care. You can all despise me, but I'll be laughing at the end! You'll all submit to me!"
+	}, {
+		author: "Wiegraf from Final Fantasy",
+		quote: "Two lions are fighting for power after the king dies... Both want to know who their allies are. But, it's hard to read strangers' minds. So, why not kill 'em all and bring in your own people?"
+	}, {
+		author: "Wiegraf from Final Fantasy",
+		quote: "Ha! No spoony bard could spin a sweeter tale! You say your brothers do not want this fight? Tears then, for the world you see is one beyond my weary sight!"
+	}, {
+		author: "Spike from Cowboy Bebop",
+		quote: "Bang."
+	}, {
+		author: "Jet Black from Cowboy Bebop",
+		quote: "Everything has a beginning and an end. Life is just a cycle of starts and stops. There are ends we don't desire, but they're inevitable, we have to face them. It's what being human is all about."
+	}, {
+		author: "Title Card from Cowboy Bebop",
+		quote: "See You Space Cowboy..."
+	}]
+	
 	
 	$scope.index = 0;
 	$scope.currentQuotes = $scope.darkestDungeonQuotes;

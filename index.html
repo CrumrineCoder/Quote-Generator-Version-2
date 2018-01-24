@@ -14,9 +14,10 @@
 <body ng-app="quoteApp" ng-controller="quoteController"> 
 	<button ng-click="randomize()">Randomize the Order of the Quotes</button>
 	<button ng-click="changeArray('DarkestDungeon')">Darkest Dungeon Quotes </button> 
-	<button ng-click="changeArray('Civilization')">Civilization Quotes </button>
+	<button ng-click="changeArray('Civilization')">Sid Meier's Civilization Quotes </button>
 	<button ng-click="changeArray('ElderScrolls')">Elder Scrolls Quotes </button> 
 	<button ng-click="changeArray('Discworld')">Discworld Quotes </button>
+	<button ng-click="changeArray('Misc')">Misc Quotes (Protomen, Bioshock, Final Fantasy, etc.)</button>
 	<button  ng-click="index = (index + 1) % currentQuotes.length">Generate New Quote</button>
 	<button ng-click="tweet()" class="fa fa-twitter"></button> 
 	<p>{{currentQuotes[index].quote}}</p>
