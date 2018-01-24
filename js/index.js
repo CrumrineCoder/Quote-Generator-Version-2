@@ -476,19 +476,44 @@ app.controller('quoteController', function($scope) {
 		$scope.currentQuotes = shuffle($scope.currentQuotes); 
 	}
 	$scope.changeArray = function(param) {  
-		if(param == 'DarkestDungeon'){
+		if(param == 'ElderScrolls'){
 			$scope.currentQuotes = $scope.darkestDungeonQuotes;
+			$('#elderScrolls').addClass('active');
+			$('#civilization').removeClass('active');
+			$('#discworld').removeClass('active');
+			$('#darkestDungeon').removeClass('active');
+			$('#misc').removeClass('active');
 		} else if(param == 'Civilization'){
 			$scope.currentQuotes = $scope.civilizationQuotes;
-		}
-		else if(param == 'ElderScrolls'){
-			$scope.currentQuotes = $scope.elderScrollsQuotes;
+			$('#elderScrolls').removeClass('active');
+			$('#civilization').addClass('active');
+			$('#discworld').removeClass('active');
+			$('#darkestDungeon').removeClass('active');
+			$('#misc').removeClass('active');
 		}
 		else if(param == 'Discworld'){
+			$scope.currentQuotes = $scope.elderScrollsQuotes;
+			$('#elderScrolls').removeClass('active');
+			$('#civilization').removeClass('active');
+			$('#discworld').addClass('active');
+			$('#darkestDungeon').removeClass('active');
+			$('#misc').removeClass('active');
+		}
+		else if(param == 'DarkestDungeon'){
 			$scope.currentQuotes = $scope.discworldQuotes;
+			$('#elderScrolls').removeClass('active');
+			$('#civilization').removeClass('active');
+			$('#discworld').removeClass('active');
+			$('#darkestDungeon').addClass('active');
+			$('#misc').removeClass('active');
 		}
 		else if(param == 'Misc'){
 			$scope.currentQuotes = $scope.miscQuotes;
+			$('#elderScrolls').removeClass('active');
+			$('#civilization').removeClass('active');
+			$('#discworld').removeClass('active');
+			$('#darkestDungeon').removeClass('active');
+			$('#misc').addClass('active');
 		}
 		$scope.randomize();
 	 }
