@@ -248,6 +248,104 @@ app.controller('quoteController', function($scope) {
 		quote: "Every great advance in science has issues from a new audacity of imagination."
 	}];
 	
+	$scope.elderScrollsQuotes = [{
+		author: "Caius Cosades",
+		quote: "No point in being part of history if you're too ignorant to understand it."
+	}, {
+		author: "Leveling Up",
+		quote: "You plod along, putting one foot before the other, look up, and suddenly, there you are. Right where you wanted to be all along."
+	}, {
+		author: "Shahvee",
+		quote: "Sometimes life puts you in difficult circumstances you didn't choose. But being happy or unhappy is a choice you make, and I've chosen to make the best of things that I can."
+	}, {
+		author: "Gwilin",
+		quote: "My father taught me an important lesson many years ago. He said, 'Gwinlin, you have the whole world before you. Go out and experience it... be whatever you want to be.' So I took his advice, and here I am. This life might not look like much to you, but I'm content, and isn't that all that matters?"
+	}, {
+		author: "Paarthurnax",
+		quote: "What is better: To be born good, or to overcome one's evil nature through great effort?"
+	}, {
+		author: "Khajit Proverb",
+		quote: "May your roads lead to warm sands."
+	}, {
+		author: "Martin",
+		quote: "I still don't know if there is a divine plan, but I've come to realize that it doesn't matter. What matters is that we act; that we do what's right when confronted with evil. That's what you did at Kvatch. It wasn't the gods that saved us, it was you."
+	}, {
+		author: "Gaiden Shinji",
+		quote: "The best techniques are passed on by the survivors."
+	}, {
+		author: "Leveling Up",
+		quote: "The results of hard work and dedication always look like luck. But you know you've earned every ounce of your success."
+	}, {
+		author: "Sheogorath",
+		quote: "Change will preserve us! It is the lifeblood of the world. It will move mountains! It will mount movements!"
+	}, {
+		author: "Nine Commands of the Eight Divines",
+		quote: "Treasure the gifts of friendship. Seek joy and inspiration in the mysteries of love."
+	}, {
+		author: "Leveling Up",
+		quote: "It's the strangest thing. Yesterday, it was hard, today, it is easy. Just a good night's sleep, and yesterday's mysteries are today's masteries."
+	}, {
+		author: "Merchant at Belkarth Bazaar",
+		quote: "My wife told me that I need to move more product, so I took the shields out of a crate and put them in a barrel. I don't know how that's supposed to help our business, but she's always been the brains in the family."
+	}];
+	
+	$scope.discworldQuotes = [{
+		author: "Terry Pratchett",
+		quote: " \"The graveyards are full of people who rushed in bravely but unwisely.\" \"Ook.\" \"What did he say?\" \"He said 'the graveyards are full of everybody eventually'\"."
+	}, {
+		author: "Terry Pratchett",
+		quote: "Coffee is a way of stealing time that should by rights belong to your older self."
+	}, {
+		author: "Terry Pratchett",
+		quote: "It was because he wanted there to be conspirators. It was much better to imagine men in some smoky room somewhere, made mad and cynical by privilege and power, plotting over the brandy. You had to cling to this sort of image, because if you didn’t then you might have to face the fact that bad things happened because ordinary people, the kind who brushed the dog and told their children bedtime stories, were capable of then going out and doing horrible things to other ordinary people. It was so much easier to blame it on Them. It was bleakly depressing to think that They were Us. If it was Them, then nothing was anyone’s fault. If it was Us, what did that make Me? After all, I’m one of Us. I must be. I’ve certainly never thought of myself as one of Them. No one ever thinks of themselves as one of Them. We’re always one of Us. It’s Them that do the bad things"
+	}, {
+		author: "Terry Pratchett",
+		quote: " \"Did you really punch the president of the Assassin's Guild?\" \"Yes, sir.\" \"Why?\" \"Didn't have a dagger, sir.\""
+	}, {
+		author: "Terry Pratchett",
+		quote: "Build a man a fire, and he'll be warm for a day. Set a man on fire, and he'll be warm for the rest of his life."
+	}, {
+		author: "Terry Pratchett",
+		quote: "The senior wizard in a world of magic had the same prospects of long-term employment as a pogo stick tester in a minefield."
+	}, {
+		author: "Terry Pratchett",
+		quote: " YOU THINK SO? THEN TAKE THE UNIVERSE AND GRIND IT DOWN TO THE FINEST POWDER AND SIEVE IT THROUGH THE FINEST SIEVE AND THEN SHOW ME ONE ATOM OF JUSTICE, ONE MOLECULE OF MERCY. AND YET—Death waved a hand. AND YET YOU ACT AS IF THERE IS SOME IDEAL ORDER IN THE WORLD, AS IF THERE IS SOME...SOME RIGHTNESS IN THE UNIVERSE BY WHICH IT MAY BE JUDGED. \"Yes, but people have got to believe that, or what's the point—\" MY POINT EXACTLY. "
+	}, {
+		author: "Terry Pratchett",
+		quote: "Personal’s not the same as important."
+	}, {
+		author: "Terry Pratchett",
+		quote: "Down there - he said - are people who will follow any dragon, worship any god, ignore any inequity. All out of a kind of humdrum, everyday badness. Not the really high, creative loathsomeness of the great sinners, but a sort of mass-produced darkness of the soul. Sin, you might say, without a trace of originality. They accept evil not because they say yes, but because they don't say no."
+	}, {
+		author: "Oath of the Watchmen, Terry Pratchett",
+		quote: "I comma square bracket recruit’s name square bracket comma do solemnly swear by square bracket recruit’s deity of choice square bracket to uphold the Laws and Ordinances of the city of Ankh-Morpork comma serve the public trust comma and defend the subjects of His stroke Her bracket delete whichever is inappropriate bracket Majesty bracket name of reigning monarch bracket without fear comma favor comma or thought of personal safety semicolon to pursue evildoers and protect the innocent comma laying down my life if neccessary in the cause of said duty comma so help me bracket aforesaid deity bracket full stop Gods Save the King stroke Queen bracket delete whichever is inappropriate bracket full stop"
+	}, {
+		author: "Terry Pratchett",
+		quote: "I believe you find life such a problem because you think there are the good people and the bad people,' said the man [Vetinari]. 'You are wrong, of course. There are, always and only, the bad people, but some of them are on opposite sides."
+	}, {
+		author: "Terry Pratchett",
+		quote: "Just because you can explain it doesn't mean it's not still a miracle."
+	}, {
+		author: "Terry Pratchett",
+		quote: " The Patrician took a sip of his beer. \“I have told this to few people, gentlemen, and I suspect I never will again, but one day when I was a young boy on holiday in Uberwald I was walking along the bank of a stream when I saw a mother otter with her cubs. A very endearing sight, I’m sure you will agree, and even as I watched, the mother otter dived into the water and came up with a plump salmon, which she subdued and dragged on to a half-submerged log. As she ate it, while of course it was still alive, the body split and I remember to this day the sweet pinkness of its roes as they spilled out, much to the delight of the baby otters who scrambled over themselves to feed on the delicacy. One of nature’s wonders, gentlemen: mother and children dining upon mother and children. And that’s when I first learned about evil. It is built into the very nature of the universe. Every world spins in pain. If there is any kind of supreme being, I told myself, it is up to all of us to become his moral superior.\” The two wizards exchanged a glance. Vetinari was staring into the depths of his beer mug and they were glad that they did not know what he saw in there."
+	}, {
+		author: "Terry Pratchett",
+		quote: "'But there are causes worth dying for,' said Butterfly. 'No, there aren't! Because you've only got one life but you can pick up another five causes on any street corner!' 'Good grief, how can you live with a philosophy like that?' Rincewind took a deep breath. 'Continuously!'"
+	}, {
+		author: "Terry Pratchett",
+		quote: "If you trust in yourself. . .and believe in your dreams. . .and follow your star. . . you'll still get beaten by people who spent their time working hard and learning things and weren't so lazy."
+	}, {
+		author: "Terry Pratchett",
+		quote: " \"You can't give her that!\" she screamed. \"It's not safe!\" IT'S A SWORD, said the Hogfather. THEY'RE NOT MEANT TO BE SAFE. \"She's a child!\" shouted Crumley. IT'S EDUCATIONAL. \"What if she cuts herself?\" THAT WILL BE AN IMPORTANT LESSON."
+	}, {
+		author: "Terry Pratchett",
+		quote: "HUMAN BEINGS ARE SO INTERESTING. DID YOU KNOW, IN A UNIVERSE SO FULL OF WONDERS, THEY'VE MANAGED TO INVENT BOREDOM? FASCINATING."
+	}, {
+		author: "Terry Pratchett",
+		quote: "The trouble with having an open mind, of course, is that people will insist on coming along and trying to put things in it."
+	}];
+	
+	
 	$scope.index = 0;
 	$scope.currentQuotes = $scope.darkestDungeonQuotes;
 	function shuffle(array) {
@@ -275,6 +373,12 @@ app.controller('quoteController', function($scope) {
 			$scope.currentQuotes = $scope.darkestDungeonQuotes;
 		} else if(param == 'Civilization'){
 			$scope.currentQuotes = $scope.civilizationQuotes;
+		}
+		else if(param == 'ElderScrolls'){
+			$scope.currentQuotes = $scope.elderScrollsQuotes;
+		}
+		else if(param == 'Discworld'){
+			$scope.currentQuotes = $scope.discworldQuotes;
 		}
 		$scope.randomize();
 	 }
