@@ -475,7 +475,11 @@ app.controller('quoteController', function($scope) {
 	document.body.onkeyup = function(e) {
 		if (e.keyCode == 32) {
 			$scope.$apply(function() {
+				console.log($scope.currentQuotes);
+				console.log($scope.currentQuotes[$scope.index]);
 				$scope.index = ($scope.index + 1) % $scope.currentQuotes.length;
+				console.log($scope.currentQuotes);
+				console.log($scope.currentQuotes[$scope.index]);
 			});
 		}
 	};
