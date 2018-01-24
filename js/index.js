@@ -44,6 +44,14 @@ app.controller('quoteController', function($scope) {
 			$scope.currentQuotes = $scope.civilizationQuotes;
 		}
 	 }
+	 $scope.tweet = function(){
+		window.open(
+    "https://twitter.com/intent/tweet?&text=" +
+      $scope.currentQuotes[$scope.index].quote +
+      " ~ " +
+      $scope.currentQuotes[$scope.index].author
+  );
+	}
 	/*
     $scope.Generate = function() {
         if ($scope.chosenArray == 'DarkestDungeon') {
