@@ -12,10 +12,10 @@ var app = angular.module('quoteApp', []);
 app.controller('quoteController', function($scope) {
 	$scope.darkestDungeonQuotes = [{
 		author: "The Ancestor",
-		quote: "Prodigious size alone does not dissuade the sharpened blade"
+		quote: "Prodigious size alone does not dissuade the sharpened blade."
 	}, {
 		author: "The Ancestor",
-		quote: "Overconfidance is a slow and insidious killer"
+		quote: "Overconfidance is a slow and insidious killer."
 	}, {
 		author: "The Ancestor",
 		quote: "Glittering gold, trinkets and baubles... Paid for in blood."
@@ -33,7 +33,7 @@ app.controller('quoteController', function($scope) {
 		quote: "As life ebbs, terrible vistas of emptiness reveal themselves."
 	}, {
 		author: "The Ancestor",
-		quote: "How quickly the tide turns in battle"
+		quote: "How quickly the tide turns in battle."
 	}, {
 		author: "The Ancestor",
 		quote: "In the face of death does true heroism show, or cowardice."
@@ -42,28 +42,28 @@ app.controller('quoteController', function($scope) {
 		quote: "Adversity can foster hope, and resilience."
 	}, {
 		author: "The Ancestor",
-		quote: "The sin is not in being outmatched - but failing to recognize it"
+		quote: "The sin is not in being outmatched - but failing to recognize it."
 	}, {
 		author: "The Ancestor",
-		quote: "Many fall in the face of chaos. But not this one, not today"
+		quote: "Many fall in the face of chaos. But not this one, not today."
 	}, {
 		author: "The Ancestor",
 		quote: "Monstrous size has no intrinsic merit - unless inordinate exsanguination be considered a virtue."
 	}, {
 		author: "The Ancestor",
-		quote: "In time, you will know the tragic extent of my failings"
+		quote: "In time, you will know the tragic extent of my failings."
 	}, {
 		author: "The Ancestor",
 		quote: "You answered the letter. Now ... like me ... you are a part of this place."
 	}, {
 		author: "The Ancestor",
-		quote: "A moment of valor shines brightest against a backdrop of despair"
+		quote: "A moment of valor shines brightest against a backdrop of despair."
 	}, {
 		author: "The Ancestor",
 		quote: "There can be no hope in this hell. No hope at all."
 	}, {
 		author: "The Ancestor",
-		quote: "A trifling victory, but a victory nonetheless"
+		quote: "A trifling victory, but a victory nonetheless."
 	}, {
 		author: "The Ancestor",
 		quote: "Slowly, gently...that is how a life is taken."
@@ -89,7 +89,7 @@ app.controller('quoteController', function($scope) {
 		quote: "The haft of the arrow had been feathered with one of the eagle's own plumes. We often give enemies the means of our own destruction."
 	}, {
 		author: "Kahlil Gibran",
-		quote: "We only live to discover beauty. All else is a form of waiting"
+		quote: "We only live to discover beauty. All else is a form of waiting."
 	}, {
 		author: "Lyall Watson",
 		quote: "If the brain were so simple we could understand it, we would be so simple we couldn't."
@@ -116,7 +116,7 @@ app.controller('quoteController', function($scope) {
 		quote: "The bureaucracy is expanding to meet the needs of the expanding bureaucracy."
 	}, {
 		author: "Douglass Adams",
-		quote: "Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules"
+		quote: "Nothing travels faster than light with the possible exception of bad news, which obeys its own special rules."
 	}, {
 		author: "Milton",
 		quote: "Their rising all at once was as the sound of a thunder heard remote."
@@ -128,7 +128,7 @@ app.controller('quoteController', function($scope) {
 		quote: "So teach us to number our days, so that we may apply our hearts unto wisdom."
 	}, {
 		author: "Malory",
-		quote: "Who pulleth out this sword of this stone and anvil, is rightwise king born of all England"
+		quote: "Who pulleth out this sword of this stone and anvil, is rightwise king born of all England."
 	}, {
 		author: "Albert Einstein",
 		quote: "Compound interest is the most powerful force in the universe."
@@ -193,7 +193,7 @@ app.controller('quoteController', function($scope) {
 		author: "Winston S. Churchill",
 		quote: "Diplomacy is the art of telling people to go to hell in such a way that they ask for directions."
 	}, {
-		author: "Theodore Roosevelt'",
+		author: "Theodore Roosevelt",
 		quote: "Speak softly and carry a big stick; you will go far."
 	}, {
 		author: "Charles Baudelaire",
@@ -294,7 +294,7 @@ app.controller('quoteController', function($scope) {
 		quote: "Coffee is a way of stealing time that should by rights belong to your older self."
 	}, {
 		author: "Terry Pratchett",
-		quote: "It was because he wanted there to be conspirators. It was much better to imagine men in some smoky room somewhere, made mad and cynical by privilege and power, plotting over the brandy. You had to cling to this sort of image, because if you didn’t then you might have to face the fact that bad things happened because ordinary people, the kind who brushed the dog and told their children bedtime stories, were capable of then going out and doing horrible things to other ordinary people. It was so much easier to blame it on Them. It was bleakly depressing to think that They were Us. If it was Them, then nothing was anyone’s fault. If it was Us, what did that make Me? After all, I’m one of Us. I must be. I’ve certainly never thought of myself as one of Them. No one ever thinks of themselves as one of Them. We’re always one of Us. It’s Them that do the bad things"
+		quote: "It was because he wanted there to be conspirators. It was much better to imagine men in some smoky room somewhere, made mad and cynical by privilege and power, plotting over the brandy. You had to cling to this sort of image, because if you didn’t then you might have to face the fact that bad things happened because ordinary people, the kind who brushed the dog and told their children bedtime stories, were capable of then going out and doing horrible things to other ordinary people. It was so much easier to blame it on Them. It was bleakly depressing to think that They were Us. If it was Them, then nothing was anyone’s fault. If it was Us, what did that make Me? After all, I’m one of Us. I must be. I’ve certainly never thought of myself as one of Them. No one ever thinks of themselves as one of Them. We’re always one of Us. It’s Them that do the bad things."
 	}, {
 		author: "Terry Pratchett",
 		quote: "\"Did you really punch the president of the Assassin's Guild?\" \"Yes, sir.\" \"Why?\" \"Didn't have a dagger, sir.\""
@@ -315,7 +315,7 @@ app.controller('quoteController', function($scope) {
 		quote: "Down there - he said - are people who will follow any dragon, worship any god, ignore any inequity. All out of a kind of humdrum, everyday badness. Not the really high, creative loathsomeness of the great sinners, but a sort of mass-produced darkness of the soul. Sin, you might say, without a trace of originality. They accept evil not because they say yes, but because they don't say no."
 	}, {
 		author: "Oath of the Watchmen, Terry Pratchett",
-		quote: "I comma square bracket recruit’s name square bracket comma do solemnly swear by square bracket recruit’s deity of choice square bracket to uphold the Laws and Ordinances of the city of Ankh-Morpork comma serve the public trust comma and defend the subjects of His stroke Her bracket delete whichever is inappropriate bracket Majesty bracket name of reigning monarch bracket without fear comma favor comma or thought of personal safety semicolon to pursue evildoers and protect the innocent comma laying down my life if neccessary in the cause of said duty comma so help me bracket aforesaid deity bracket full stop Gods Save the King stroke Queen bracket delete whichever is inappropriate bracket full stop"
+		quote: "I comma square bracket recruit’s name square bracket comma do solemnly swear by square bracket recruit’s deity of choice square bracket to uphold the Laws and Ordinances of the city of Ankh-Morpork comma serve the public trust comma and defend the subjects of His stroke Her bracket delete whichever is inappropriate bracket Majesty bracket name of reigning monarch bracket without fear comma favor comma or thought of personal safety semicolon to pursue evildoers and protect the innocent comma laying down my life if neccessary in the cause of said duty comma so help me bracket aforesaid deity bracket full stop Gods Save the King stroke Queen bracket delete whichever is inappropriate bracket full stop."
 	}, {
 		author: "Terry Pratchett",
 		quote: "I believe you find life such a problem because you think there are the good people and the bad people,' said the man [Vetinari]. 'You are wrong, of course. There are, always and only, the bad people, but some of them are on opposite sides."
@@ -327,7 +327,7 @@ app.controller('quoteController', function($scope) {
 		quote: "The Patrician took a sip of his beer. \“I have told this to few people, gentlemen, and I suspect I never will again, but one day when I was a young boy on holiday in Uberwald I was walking along the bank of a stream when I saw a mother otter with her cubs. A very endearing sight, I’m sure you will agree, and even as I watched, the mother otter dived into the water and came up with a plump salmon, which she subdued and dragged on to a half-submerged log. As she ate it, while of course it was still alive, the body split and I remember to this day the sweet pinkness of its roes as they spilled out, much to the delight of the baby otters who scrambled over themselves to feed on the delicacy. One of nature’s wonders, gentlemen: mother and children dining upon mother and children. And that’s when I first learned about evil. It is built into the very nature of the universe. Every world spins in pain. If there is any kind of supreme being, I told myself, it is up to all of us to become his moral superior.\” The two wizards exchanged a glance. Vetinari was staring into the depths of his beer mug and they were glad that they did not know what he saw in there."
 	}, {
 		author: "Terry Pratchett",
-		quote: "'But there are causes worth dying for,' said Butterfly. 'No, there aren't! Because you've only got one life but you can pick up another five causes on any street corner!' 'Good grief, how can you live with a philosophy like that?' Rincewind took a deep breath. 'Continuously!'"
+		quote: "'But there are causes worth dying for,' said Butterfly. 'No, there aren't! Because you've only got one life but you can pick up another five causes on any street corner!' 'Good grief, how can you live with a philosophy like that?' Rincewind took a deep breath. 'Continuously!'."
 	}, {
 		author: "Terry Pratchett",
 		quote: "If you trust in yourself. . .and believe in your dreams. . .and follow your star. . . you'll still get beaten by people who spent their time working hard and learning things and weren't so lazy."
@@ -350,7 +350,7 @@ app.controller('quoteController', function($scope) {
 		quote: "Life is easier with friends, Bigby, and we live a long fuckin' time. I know you like this whole Lone Wolf thing you got going for yourself, but I've seen the way you look at Snow, okay? You're not foolin' me."
 	}, {
 		author: "Bill from The Last of Us",
-		quote: "You know, as bad as those things are, at least they're predictable. It's the normal people that scare me"
+		quote: "You know, as bad as those things are, at least they're predictable. It's the normal people that scare me."
 	}, {
 		author: "Joel from The Last of Us",
 		quote: "I struggled for a long time with surviving. And no matter what, you keep finding something to fight for."
@@ -477,7 +477,7 @@ app.controller('quoteController', function($scope) {
 	}
 	$scope.changeArray = function(param) {  
 		if(param == 'ElderScrolls'){
-			$scope.currentQuotes = $scope.darkestDungeonQuotes;
+			$scope.currentQuotes = $scope.elderScrollsQuotes;
 			$('#elderScrolls').addClass('active');
 			$('#civilization').removeClass('active');
 			$('#discworld').removeClass('active');
@@ -492,7 +492,7 @@ app.controller('quoteController', function($scope) {
 			$('#misc').removeClass('active');
 		}
 		else if(param == 'Discworld'){
-			$scope.currentQuotes = $scope.elderScrollsQuotes;
+			$scope.currentQuotes = $scope.discworldQuotes;
 			$('#elderScrolls').removeClass('active');
 			$('#civilization').removeClass('active');
 			$('#discworld').addClass('active');
@@ -500,7 +500,7 @@ app.controller('quoteController', function($scope) {
 			$('#misc').removeClass('active');
 		}
 		else if(param == 'DarkestDungeon'){
-			$scope.currentQuotes = $scope.discworldQuotes;
+			$scope.currentQuotes = $scope.darkestDungeonQuotes;
 			$('#elderScrolls').removeClass('active');
 			$('#civilization').removeClass('active');
 			$('#discworld').removeClass('active');
