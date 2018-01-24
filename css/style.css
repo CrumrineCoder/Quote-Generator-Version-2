@@ -30,17 +30,21 @@
 }
 /* Quote Buttons */
  #quoteButtonContainer{
-     margin: 0 auto;
-     text-align: center;
-     margin-bottom: 10px;
+    margin: 10px auto;
+    text-align: center;
 }
  .quoteButtons{
      color: white;
-     border: none;
+     border: 1px solid grey;
      font-size: 14px;
      opacity: .6;
      width: 100px;
 	 height: 100px; 
+	 padding: 5px 20px; 
+}
+.quoteButtons:hover{
+	border: 1px solid black; 
+	background: #C7BDBD;
 }
  .active{
      opacity: 1;
