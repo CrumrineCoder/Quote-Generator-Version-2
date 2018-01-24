@@ -20,11 +20,9 @@
 		<input type="image" src="images/misc.png" class="quoteButtons" id="misc" ng-click="changeArray('Misc')"/>
 	</div>
 	<div id="generateContainer">
-	
-		<button id="twitterButton" ng-click="tweet()" class="fa fa-twitter"></button> 
-		<br>
 		<button id="generateNewQuote" ng-click="index = (index + 1) % currentQuotes.length"><div id="large">Generate New Quote</div><div id="small">(Spacebar or Click)</div></button>
-		
+		<br>
+		<button id="twitterButton" ng-click="tweet()" class="fa fa-twitter"></button> 
 	</div>
 	<div id="quoteContainer">
 		<img src="images/leftQuote.png" id="quote-sign-top"> </img>

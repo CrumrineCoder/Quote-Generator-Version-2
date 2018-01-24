@@ -1,6 +1,6 @@
 /* entire document */
  body{
-     background: white ;
+     background: #D6D6D6 ;
      font-family: 'Roboto Mono', monospace;
      margin: 0;
 	 color: black; 
@@ -30,8 +30,9 @@
 }
 /* Quote Buttons */
  #quoteButtonContainer{
-    margin: 10px auto;
+    margin:0px auto;
     text-align: center;
+	background: #575757; 
 }
  .quoteButtons{
      color: white;
@@ -41,6 +42,7 @@
      width: 100px;
 	 height: 100px; 
 	 padding: 5px 20px; 
+	 background: white; 
 }
 .quoteButtons:hover{
 	border: 1px solid black; 
@@ -57,9 +59,9 @@
 	text-align: center; 
 }
 #generateNewQuote, #twitterButton{
-	border: 2px solid black; 
-	background: white; 
-	color: black; 
+	border: none; 
+	background: #575757; 
+	color: white; 
 	padding: 3px 20px; ; 
 }
 #large{
@@ -69,18 +71,21 @@
 	font-size: 12px; 
 }
 #twitterButton{
-	font-size: 14px;
-  border-top: 2px solid;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom: none; 
-  width: 100px; 
+  font-size: 14px;
+  border-bottom: 2px solid;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top: none; 
+  width: 300px; 
+  margin-bottom: 10px; 
+  margin-right: 8px; 
+  height: 30px; 
 }
 #generateNewQuote{
-	margin-bottom: 10px; 
+ width: 300px; 
 }
 #generateNewQuote:hover, #twitterButton:hover{
-	background: #D9D9D9; 
+	background: #242424; 
 }
 
 /* Block quotes */
@@ -95,10 +100,11 @@
 
 /* Quote */
 #quoteContainer{
-    background: #D4D8D1;
+    background: #525252;
 	width: 80%;
 	margin: 0 auto; 
 	padding: 10px; 
+	color: white; 
 }
 p{
 	margin: 0px; 
@@ -115,7 +121,8 @@ p{
   margin: 0 auto; 
   font-size: 14px;
   text-align: center;
-  background: #D4D8D1;
+  background: #525252;
+  color: white; 
   border-bottom: 2px solid white;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
