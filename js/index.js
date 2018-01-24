@@ -1,7 +1,4 @@
-// Refresh button 
-// Add all used quotes back into the quotes array.
-// Multiple quote arrays
-// Variable for knowing which quotes to draw from. User clicks on the get next quote button which will check which quotes we're drawing from. If the darkestDungeonQuotes is at least 1, then get a random one from it. Remove it and add it to the used Quotes.
+// Random index, way to check.
 // Image for each array in the background
 
 
@@ -34,9 +31,35 @@ app.controller('quoteController', function($scope) {
 	}, {
 		author: "Kahlil Gibran",
 		quote: "We only live to discover beauty. All else is a form of waiting"
+	}, {
+		author: "Lyall Watson",
+		quote: "If the brain were so simple we could understand it, we would be so simple we couldn't."
+	}, {
+		author: "Tom Lehrer",
+		quote: "Once the rockets are up, who cares where they come down?"
 	}];
 	$scope.index = 0;
 	$scope.currentQuotes = $scope.darkestDungeonQuotes;
+	function shuffle(array) {
+	  var currentIndex = array.length, temporaryValue, randomIndex;
+	  // While there remain elements to shuffle...
+	  while (0 !== currentIndex) {
+
+		// Pick a remaining element...
+		randomIndex = Math.floor(Math.random() * currentIndex);
+		currentIndex -= 1;
+
+		// And swap it with the current element.
+		temporaryValue = array[currentIndex];
+		array[currentIndex] = array[randomIndex];
+		array[randomIndex] = temporaryValue;
+	  }
+
+	  return array;
+	}
+	$scope.randomize = function() {  
+		$scope.currentQuotes = shuffle($scope.currentQuotes); 
+	}
 	$scope.changeArray = function(param) {  
 		if(param == 'DarkestDungeon'){
 			$scope.currentQuotes = $scope.darkestDungeonQuotes;
@@ -45,51 +68,6 @@ app.controller('quoteController', function($scope) {
 		}
 	 }
 	 $scope.tweet = function(){
-		window.open(
-    "https://twitter.com/intent/tweet?&text=" +
-      $scope.currentQuotes[$scope.index].quote +
-      " ~ " +
-      $scope.currentQuotes[$scope.index].author
-  );
-	}
-	/*
-    $scope.Generate = function() {
-        if ($scope.chosenArray == 'DarkestDungeon') {
-            if ($scope.darkestDungeonQuotes.length != 0) {
-               
-				setTimeout(function() {
-					$scope.$apply(function() {
-						 $scope.index = Math.floor(Math.random() * $scope.darkestDungeonQuotes.length - 1) + 1;
-						console.log($scope.darkestDungeonQuotes[$scope.index]);
-						console.log($scope.index);
-						$scope.Text = $scope.darkestDungeonQuotes[$scope.index].quote;
-						$scope.Author = $scope.darkestDungeonQuotes[$scope.index].author;
-					});
-				}, 100);
-                $scope.usedDarkestDungeonQuotes.push($scope.darkestDungeonQuotes[$scope.index]);
-                $scope.darkestDungeonQuotes = $scope.darkestDungeonQuotes.slice(0, $scope.index).concat($scope.darkestDungeonQuotes.slice($scope.index + 1, $scope.darkestDungeonQuotes.length));
-            } else {
-                $scope.$evalAsync(function() {
-                    $scope.Author = "The Webmaster";
-                    $scope.Text = "No more quotes avaliable. Either click the refresh button, select another set, or go do something else. Do whatever, man."
-                });
-            }
-        } else if (chosenArray == 'Civilization') {
-            if (civilizationQuotes.length != 0) {
-                console.log("Non empty array");
-                var index = Math.floor(Math.random() * civilizationQuotes.length - 1) + 1;
-                $scope.$evalAsync(function() {
-                    $scope.Text = civilizationQuotes[index].quote;
-                    $scope.Author = civilizationQuotes[index].author
-                });
-                usedCivilizationQuotes.push(civilizationQuotes[index]);
-                civilizationQuotes = civilizationQuotes.slice(0, index).concat(civilizationQuotes.slice(index + 1, civilizationQuotes.length));
-            } else {
-                $scope.$evalAsync(function() {
-                    $scope.Author = "The Webmaster";
-                    $scope.Text = "No more quotes avaliable. Either click the refresh button, select another set, or go do something else. Do whatever, man."
-                });
-            }
-        } 
-    } */
+		window.open("https://twitter.com/intent/tweet?&text=" + $scope.currentQuotes[$scope.index].quote + " ~ " + $scope.currentQuotes[$scope.index].author );
+	 }
 });
