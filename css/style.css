@@ -45,11 +45,12 @@ button:focus {
 	 background: white; 
 }
 .quoteButtons:hover{
-	border: 3px solid black; 
+	
 	background: #E8E8E8;
 }
  .active{
      opacity: 1;
+	 border: 3px solid black; 
 }
 #darkestDungeon{
 	padding: none; 

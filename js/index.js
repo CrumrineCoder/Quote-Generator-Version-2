@@ -474,6 +474,11 @@ app.controller('quoteController', function($scope) {
 	$scope.randomize = function() {  
 		$scope.currentQuotes = shuffle($scope.currentQuotes); 
 	}
+	document.body.onkeyup = function(e) {
+		if (e.keyCode == 32) {
+			$scope.index = ($scope.index + 1) % $scope.currentQuotes.length;
+		}
+	};
 	// body = light 
 	// #quoteButtonContainer, #generateNewQuote, #twitterButton, #quoteContainer, #author = dark
 	// #generateNewQuote:hover, #twitterButton:hover = super dark
