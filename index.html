@@ -13,11 +13,11 @@
 
 <body ng-app="quoteApp" ng-controller="quoteController"> 
 	<div id="quoteButtonContainer">
-		<input type="image" src="images/elderScrolls.png" class="quoteButtons" id="elderScrolls" ng-click="changeArray('ElderScrolls')"/>
-		<input type="image" src="images/civilization.png" class="quoteButtons" id="civilization" ng-click="changeArray('Civilization')"/>
-		<input type="image" src="images/discworld.png" class="quoteButtons" id="discworld" ng-click="changeArray('Discworld')"/>
-		<input type="image" src="images/darkestDungeon.png" class="quoteButtons" id="darkestDungeon" ng-click="changeArray('DarkestDungeon')"/>
-		<input type="image" src="images/misc.png" class="quoteButtons" id="misc" ng-click="changeArray('Misc')"/>
+		<input type="image" src="images/elderScrolls.png" class="quoteButtons" id="elderScrolls" ng-click="changeArray('ElderScrolls')" title="Elder Scrolls"/>
+		<input type="image" src="images/civilization.png" class="quoteButtons" id="civilization" ng-click="changeArray('Civilization')" title="Sid Meier's Civilization"/>
+		<input type="image" src="images/discworld.png" class="quoteButtons" id="discworld" ng-click="changeArray('Discworld')" title="Discworld" />
+		<input type="image" src="images/darkestDungeon.png" class="quoteButtons" id="darkestDungeon" ng-click="changeArray('DarkestDungeon')" title="Darkest Dungeon"/>
+		<input type="image" src="images/misc.png" class="quoteButtons" id="misc" ng-click="changeArray('Misc')" title="Other series with not enough quote for a button."/>
 	</div>
 	<div id="generateContainer">
 		<button id="generateNewQuote" ng-click="index = (index + 1) % currentQuotes.length"><div id="large">Generate New Quote</div><div id="small">(Spacebar or Click)</div></button>

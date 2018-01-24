@@ -288,7 +288,7 @@ app.controller('quoteController', function($scope) {
 	
 	$scope.discworldQuotes = [{
 		author: "Terry Pratchett",
-		quote: "\"The graveyards are full of people who rushed in bravely but unwisely.\" \"Ook.\" \"What did he say?\" \"He said 'the graveyards are full of everybody eventually'\"."
+		quote: "\"The graveyards are full of people who rushed in bravely but unwisely.\" \n \"Ook.\" \n \"What did he say?\" \n \"He said 'the graveyards are full of everybody eventually'\"."
 	}, {
 		author: "Terry Pratchett",
 		quote: "Coffee is a way of stealing time that should by rights belong to your older self."
@@ -297,7 +297,7 @@ app.controller('quoteController', function($scope) {
 		quote: "It was because he wanted there to be conspirators. It was much better to imagine men in some smoky room somewhere, made mad and cynical by privilege and power, plotting over the brandy. You had to cling to this sort of image, because if you didn’t then you might have to face the fact that bad things happened because ordinary people, the kind who brushed the dog and told their children bedtime stories, were capable of then going out and doing horrible things to other ordinary people. It was so much easier to blame it on Them. It was bleakly depressing to think that They were Us. If it was Them, then nothing was anyone’s fault. If it was Us, what did that make Me? After all, I’m one of Us. I must be. I’ve certainly never thought of myself as one of Them. No one ever thinks of themselves as one of Them. We’re always one of Us. It’s Them that do the bad things."
 	}, {
 		author: "Terry Pratchett",
-		quote: "\"Did you really punch the president of the Assassin's Guild?\" \"Yes, sir.\" \"Why?\" \"Didn't have a dagger, sir.\""
+		quote: "\"Did you really punch the president of the Assassin's Guild?\" \n \"Yes, sir.\" \n  \"Why?\" \n \"Didn't have a dagger, sir.\""
 	}, {
 		author: "Terry Pratchett",
 		quote: "Build a man a fire, and he'll be warm for a day. Set a man on fire, and he'll be warm for the rest of his life."
@@ -306,7 +306,7 @@ app.controller('quoteController', function($scope) {
 		quote: "The senior wizard in a world of magic had the same prospects of long-term employment as a pogo stick tester in a minefield."
 	}, {
 		author: "Terry Pratchett",
-		quote: "YOU THINK SO? THEN TAKE THE UNIVERSE AND GRIND IT DOWN TO THE FINEST POWDER AND SIEVE IT THROUGH THE FINEST SIEVE AND THEN SHOW ME ONE ATOM OF JUSTICE, ONE MOLECULE OF MERCY. AND YET—Death waved a hand. AND YET YOU ACT AS IF THERE IS SOME IDEAL ORDER IN THE WORLD, AS IF THERE IS SOME...SOME RIGHTNESS IN THE UNIVERSE BY WHICH IT MAY BE JUDGED. \"Yes, but people have got to believe that, or what's the point—\" MY POINT EXACTLY. "
+		quote: "YOU THINK SO? THEN TAKE THE UNIVERSE AND GRIND IT DOWN TO THE FINEST POWDER AND SIEVE IT THROUGH THE FINEST SIEVE AND THEN SHOW ME ONE ATOM OF JUSTICE, ONE MOLECULE OF MERCY. AND YET—Death waved a hand. AND YET YOU ACT AS IF THERE IS SOME IDEAL ORDER IN THE WORLD, AS IF THERE IS SOME...SOME RIGHTNESS IN THE UNIVERSE BY WHICH IT MAY BE JUDGED. \n \"Yes, but people have got to believe that, or what's the point—\" \n MY POINT EXACTLY. "
 	}, {
 		author: "Terry Pratchett",
 		quote: "Personal’s not the same as important."
@@ -324,16 +324,16 @@ app.controller('quoteController', function($scope) {
 		quote: "Just because you can explain it doesn't mean it's not still a miracle."
 	}, {
 		author: "Terry Pratchett",
-		quote: "The Patrician took a sip of his beer. \“I have told this to few people, gentlemen, and I suspect I never will again, but one day when I was a young boy on holiday in Uberwald I was walking along the bank of a stream when I saw a mother otter with her cubs. A very endearing sight, I’m sure you will agree, and even as I watched, the mother otter dived into the water and came up with a plump salmon, which she subdued and dragged on to a half-submerged log. As she ate it, while of course it was still alive, the body split and I remember to this day the sweet pinkness of its roes as they spilled out, much to the delight of the baby otters who scrambled over themselves to feed on the delicacy. One of nature’s wonders, gentlemen: mother and children dining upon mother and children. And that’s when I first learned about evil. It is built into the very nature of the universe. Every world spins in pain. If there is any kind of supreme being, I told myself, it is up to all of us to become his moral superior.\” The two wizards exchanged a glance. Vetinari was staring into the depths of his beer mug and they were glad that they did not know what he saw in there."
+		quote: "The Patrician took a sip of his beer. \“I have told this to few people, gentlemen, and I suspect I never will again, but one day when I was a young boy on holiday in Uberwald I was walking along the bank of a stream when I saw a mother otter with her cubs. A very endearing sight, I’m sure you will agree, and even as I watched, the mother otter dived into the water and came up with a plump salmon, which she subdued and dragged on to a half-submerged log. As she ate it, while of course it was still alive, the body split and I remember to this day the sweet pinkness of its roes as they spilled out, much to the delight of the baby otters who scrambled over themselves to feed on the delicacy. One of nature’s wonders, gentlemen: mother and children dining upon mother and children. And that’s when I first learned about evil. It is built into the very nature of the universe. Every world spins in pain. If there is any kind of supreme being, I told myself, it is up to all of us to become his moral superior.\” \n  The two wizards exchanged a glance. Vetinari was staring into the depths of his beer mug and they were glad that they did not know what he saw in there."
 	}, {
 		author: "Terry Pratchett",
-		quote: "'But there are causes worth dying for,' said Butterfly. 'No, there aren't! Because you've only got one life but you can pick up another five causes on any street corner!' 'Good grief, how can you live with a philosophy like that?' Rincewind took a deep breath. 'Continuously!'."
+		quote: "'But there are causes worth dying for,' said Butterfly. \n  'No, there aren't! Because you've only got one life but you can pick up another five causes on any street corner!' \n 'Good grief, how can you live with a philosophy like that?' \n Rincewind took a deep breath. 'Continuously!'."
 	}, {
 		author: "Terry Pratchett",
 		quote: "If you trust in yourself. . .and believe in your dreams. . .and follow your star. . . you'll still get beaten by people who spent their time working hard and learning things and weren't so lazy."
 	}, {
 		author: "Terry Pratchett",
-		quote: "\"You can't give her that!\" she screamed. \"It's not safe!\" IT'S A SWORD, said the Hogfather. THEY'RE NOT MEANT TO BE SAFE. \"She's a child!\" shouted Crumley. IT'S EDUCATIONAL. \"What if she cuts herself?\" THAT WILL BE AN IMPORTANT LESSON."
+		quote: "\"You can't give her that!\" she screamed. \"It's not safe!\" \n IT'S A SWORD, said the Hogfather. THEY'RE NOT MEANT TO BE SAFE. \n \"She's a child!\" shouted Crumley. \n IT'S EDUCATIONAL. \n \"What if she cuts herself?\" \n THAT WILL BE AN IMPORTANT LESSON."
 	}, {
 		author: "Terry Pratchett",
 		quote: "HUMAN BEINGS ARE SO INTERESTING. DID YOU KNOW, IN A UNIVERSE SO FULL OF WONDERS, THEY'VE MANAGED TO INVENT BOREDOM? FASCINATING."
@@ -374,7 +374,7 @@ app.controller('quoteController', function($scope) {
 		quote: "A city at the bottom of the ocean? Ridiculous...."
 	}, {
 		author: "Booker from Bioshock",
-		quote: "One thing I've learned: if you don't draw first, you don't get to draw at all"
+		quote: "One thing I've learned: if you don't draw first, you don't get to draw at all."
 	}, {
 		author: "Rosalind Lutece from Bioshock",
 		quote: "A middle C vibrates at 262 hz, no matter what the universe."
@@ -383,16 +383,16 @@ app.controller('quoteController', function($scope) {
 		quote: "Would you kindly?"
 	}, {
 		author: "Andrew Ryan from Bioshock",
-		quote: "A Man Choses, A Slave Obeys"
+		quote: "A Man Choses, A Slave Obeys."
 	}, {
 		author: "Andrew Ryan from Bioshock",
-		quote: "No Gods Or Kings, Only Man"
+		quote: "No Gods Or Kings, Only Man."
 	}, {
 		author: "Andrew Ryan from Bioshock",
 		quote: "I am Andrew Ryan, and I'm here to ask you a question. Is a man not entitled to the sweat of his brow? \"No,\" says the man in Washington, \"it belongs to the poor.\" \"No,\" says the man in the Vatican, \"it belongs to God.\" \"No,\" says the man in Moscow, \"it belongs to everyone.\" I rejected those answers; instead, I chose something different. I chose the impossible. I chose... Rapture. A city where the artist would not fear the censor; where the scientist would not be bound by petty morality; where the great would not be constrained by the small! And with the sweat of your brow, Rapture can become your city as well."
 	}, {
 		author: "Protomen",
-		quote: "We have control \nWe keep you safe \nWe are your hope \nWe are in control"
+		quote: "We have control \nWe keep you safe \nWe are your hope \nWe are in control."
 	}, {
 		author: "Protomen",
 		quote: "The crowd had gathered there to watch him fall, to watch their hopes destroyed, \nThey watched them beat him, they watched them break him, they watched his last defense deployed, \nThere was not a man among them who would let himself be heard, but from the crowd, from their collective fear arose these broken words: \n'We are the dead!'"
@@ -453,7 +453,7 @@ app.controller('quoteController', function($scope) {
 	$scope.index = 0;
 	$scope.currentQuotes = [{
 		author: "Nicolas Crumrine",
-		quote: "Quotes are divided into their respective domains except for the misc quotes, which are collected from sources not as quotable as the others. To change sources, use the buttons at the top. The order will be randomized and will loop back over itself."
+		quote: "Click on one of the five buttons above to select a category to pull quotes from. The order will be randomized and will loop over itself. The miscellaneous ('?') section is for sources that I didn't pull enough quotes from to warrant making a separate button."
 	}];
 	function shuffle(array) {
 	  var currentIndex = array.length, temporaryValue, randomIndex;
