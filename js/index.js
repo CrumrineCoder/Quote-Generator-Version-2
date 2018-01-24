@@ -444,6 +444,9 @@ app.controller('quoteController', function($scope) {
 	}, {
 		author: "Title Card from Cowboy Bebop",
 		quote: "See You Space Cowboy..."
+	}, {
+		author: "Faye Valentine from Cowboy Bebop",
+		quote: "They often say that humans can’t live alone. But you can live pretty long by yourself. Instead of feeling alone in a group, it’s better to be alone in your solitude."
 	}]
 	
 	

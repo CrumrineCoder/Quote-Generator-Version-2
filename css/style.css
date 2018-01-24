@@ -44,7 +44,7 @@
 }
 .quoteButtons:hover{
 	border: 1px solid black; 
-	background: #C7BDBD;
+	background: #D9D9D9;
 }
  .active{
      opacity: 1;
@@ -85,8 +85,8 @@
 
 /* Block quotes */
 #quote-sign-top, #quote-sign-bottom{
-  width: 50px;
-  height: 39px;
+  width: 25px;
+  height: 19px;
 
 }
 #quote-sign-bottom{
