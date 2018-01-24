@@ -4,9 +4,7 @@
 
 
 function chooseArray(newQuote) {
-    console.log(chosenArray);
     chosenArray = newQuote;
-    console.log(newQuote);
 }
 var app = angular.module('quoteApp', []);
 app.controller('quoteController', function($scope) {
@@ -476,7 +474,9 @@ app.controller('quoteController', function($scope) {
 	}
 	document.body.onkeyup = function(e) {
 		if (e.keyCode == 32) {
-			$scope.index = ($scope.index + 1) % $scope.currentQuotes.length;
+			$scope.$apply(function() {
+				$scope.index = ($scope.index + 1) % $scope.currentQuotes.length;
+			});
 		}
 	};
 	// body = light 
