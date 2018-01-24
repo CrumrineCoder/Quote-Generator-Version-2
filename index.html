@@ -15,11 +15,11 @@
 	<button ng-click="randomize()">Randomize the Order of the Quotes</button>
 	<button ng-click="changeArray('DarkestDungeon')">Darkest Dungeon Quotes </button> 
 	<button ng-click="changeArray('Civilization')">Civilization Quotes </button>
-
-	<p>{{currentQuotes[index].quote}}</p>
-	<p>{{currentQuotes[index].author}}</p>
 	<button  ng-click="index = (index + 1) % currentQuotes.length">Generate New Quote</button>
 	<button ng-click="tweet()" class="fa fa-twitter"></button> 
+	<p>{{currentQuotes[index].quote}}</p>
+	<p>{{currentQuotes[index].author}}</p>
+
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>
     <script src="js/index.js"></script>
 

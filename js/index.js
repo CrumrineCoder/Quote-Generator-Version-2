@@ -1,4 +1,6 @@
 // Image for each array in the background
+// Change the color scheme on changing the quote array and maybe play a greeting audio sound with the narrator
+// Basic CSS layout and such.
 
 
 function chooseArray(newQuote) {
@@ -151,7 +153,101 @@ app.controller('quoteController', function($scope) {
 	}, {
 		author: "My DM and Dwight D. Eisenhower",
 		quote: "In preparing for battle I have always found that plans are useless, but planning is indispensable."
+	}, {
+		author: "Martin Luther King Jr.",
+		quote: "Our scientific power has outrun our spiritual power. We have guided missiles and misguided men."
+	}, {
+		author: "Astronautics Magazine, 1937",
+		quote: "A good rule for rocket experimenters to follow is this: always assume that it will explode."
+	}, {
+		author: "Socrates",
+		quote: "The ancient Oracle said that I was the wisest of all the Greeks. It is because I alone, of all the Greeks, know that I know nothing."
+	}, {
+		author: "Anatole France",
+		quote: "The wonder is, not that the field of stars is so vast, but that man has measured it."
+	}, {
+		author: "Socrates",
+		quote: "There is only one good, knowledge, and one evil, ignorance."
+	}, {
+		author: "Sister Miriam Godwinson",
+		quote: "The righteous need not cower before the drumbeat of human progress. Though the song of yesterday fades into the challenge of tomorrow, God still watches and judges us. Evil lurks in the datalinks as it lurked in the streets of yesteryear. But it was never the streets that were evil."
+	}, {
+		author: "Anonymous",
+		quote: "A man is nothing but a man, But before I let your steam drill beat me down, I'll die with the hammer in my hand."
+	}, {
+		author: "Ralph Waldo Emerson",
+		quote: "Earth proudly wears the Parthenon as the best gem upon her zone."
+	}, {
+		author: "Sun Tzu",
+		quote: "The art of war teaches us to rely not on the likelihood of the enemy's not attacking, but rather on the fact that we have made our position unassailable."
+	}, {
+		author: "Christopher Dawson",
+		quote: "As soon as men decide that all means are permitted to fight an evil, then their good becomes indistinguishable from the evil that they set out to destroy."
+	}, {
+		author: "Aristotle",
+		quote: "Time crumbles things. Everything grows old and is forgotten under the power of time."
+	}, {
+		author: "James Russell Lowell",
+		quote: "Things always seem fairer when we look back at them. And it is out of that inaccessible tower of the past that Longing leans and beckons."
+	}, {
+		author: "Thomas Jefferson",
+		quote: "The selfish spirit of commerce knows no country, and feels no passion or principle but that of gain."
+	}, {
+		author: "Winston S. Churchill",
+		quote: "Diplomacy is the art of telling people to go to hell in such a way that they ask for directions."
+	}, {
+		author: "Theodore Roosevelt'",
+		quote: "Speak softly and carry a big stick; you will go far."
+	}, {
+		author: "Charles Baudelaire",
+		quote: "What strange phenomena we find in a great city, all we need do is stroll about with our eyes open. Life swarms with innocent monsters."
+	}, {
+		author: "Mark Twain",
+		quote: "If you don't read the newspaper, you're uninformed. If you read the newspaper, you're mis-informed."
+	}, {
+		author: "Terry Pratchett",
+		quote: "You can't go around arresting the Thieves' Guild. I mean, we'd be at it all day!"
+	}, {
+		author: "Percy Bysshe Shelley",
+		quote: "And on the pedestal these words appear 'My name is Ozymandias, king of kings: Look on my works, ye Mighty and despair!'"
+	}, {
+		author: "Pliny the Elder",
+		quote: "True glory consists in doing what deserves to be written; in writing what deserves to be read."
+	}, {
+		author: "The Books of Chilam Balam",
+		quote: "The katun is established at Chichen Itza. The settlement of the Itza shall take place there. The quetzal shall come, the green bird shall come. Ah Kantenal shall come. It is the word of God. The Itza shall come."
+	}, {
+		author: "Robert E. Lee",
+		quote: "It is well that war is so terrible, or we should grow too fond of it."
+	}, {
+		author: "Kālidāsa",
+		quote: "Yesterday is but a dream, Tomorrow is only a vision. But today well lived makes every yesterday a dream of happiness, and every tomorrow a vision of hope."
+	}, {
+		author: "Alfred Hitchcock",
+		quote: "What is drama but life with dull bits cut out?"
+	}, {
+		author: "The Chicago Times, 1861",
+		quote: "It is a newspaper's duty to print the news and raise hell."
+	}, {
+		author: "Hélder Câmara",
+		quote: "When I give food to the poor, they call me a saint. When I ask why the poor have no food, they call me a communist."
+	}, {
+		author: "Joseph Addison",
+		quote: "Justice is an unassailable fortress, built on the brow of a mountain which cannot be overthrown by the violence of torrents, nor demolished by the force of armies."
+	}, {
+		author: "Bhagavad Gita",
+		quote: "I am become Death, the destroyer of worlds."
+	}, {
+		author: "George W. Bush",
+		quote: "I think we can agree: The past is over."
+	}, {
+		author: "Johnny Cash",
+		quote: "I fooled you. I fooled you. I got pig iron. I got pig iron. I got all pig iron."
+	}, {
+		author: "John Dewey",
+		quote: "Every great advance in science has issues from a new audacity of imagination."
 	}];
+	
 	$scope.index = 0;
 	$scope.currentQuotes = $scope.darkestDungeonQuotes;
 	function shuffle(array) {
