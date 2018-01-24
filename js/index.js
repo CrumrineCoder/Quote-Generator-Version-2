@@ -1,13 +1,6 @@
-// Image for each array in the background
-// Change the color scheme on changing the quote array and maybe play a greeting audio sound with the narrator
-// Basic CSS layout and such.
-
-
-function chooseArray(newQuote) {
-    chosenArray = newQuote;
-}
 var app = angular.module('quoteApp', []);
 app.controller('quoteController', function($scope) {
+	// Quotes to draw from: Darkest Dungeon, Civilization, Elder Scrolls, Discworld, and misc.
 	$scope.darkestDungeonQuotes = [{
 		author: "The Ancestor",
 		quote: "Prodigious size alone does not dissuade the sharpened blade."
@@ -446,12 +439,14 @@ app.controller('quoteController', function($scope) {
 		author: "Faye Valentine from Cowboy Bebop",
 		quote: "They often say that humans can’t live alone. But you can live pretty long by yourself. Instead of feeling alone in a group, it’s better to be alone in your solitude."
 	}]
-
+	// Variable to determine which Quote to show
 	$scope.index = 0;
+	// Set of quotes to show to the user. The starting one is just the instructions on how to use the App. 
 	$scope.currentQuotes = [{
 		author: "Nicolas Crumrine",
 		quote: "Click on one of the five buttons above to select a category to pull quotes from. The order will be randomized and will loop over itself. The miscellaneous ('?') section is for sources that I didn't pull enough quotes from to warrant making a separate button."
 	}];
+	// Function stolen from the internet that will shuffle an array. Used for changing array of quotes.
 	function shuffle(array) {
 	  var currentIndex = array.length, temporaryValue, randomIndex;
 	  // While there remain elements to shuffle...
@@ -469,9 +464,12 @@ app.controller('quoteController', function($scope) {
 
 	  return array;
 	}
+	// Use the randomize functin to take the currentQuotes and randomize it. 
 	$scope.randomize = function() {  
 		$scope.currentQuotes = shuffle($scope.currentQuotes); 
 	}
+	
+	// On space bar, simulate the 'generate new quote' button.
 	document.body.onkeyup = function(e) {
 		if (e.keyCode == 32) {
 			$scope.$apply(function() {
@@ -483,9 +481,7 @@ app.controller('quoteController', function($scope) {
 			});
 		}
 	};
-	// body = light 
-	// #quoteButtonContainer, #generateNewQuote, #twitterButton, #quoteContainer, #author = dark
-	// #generateNewQuote:hover, #twitterButton:hover = super dark
+	// Change arrays of quotes to draw from and show which one is active.
 	$scope.changeArray = function(param) {  
 		if(param == 'ElderScrolls'){
 			$scope.currentQuotes = $scope.elderScrollsQuotes;
@@ -526,9 +522,10 @@ app.controller('quoteController', function($scope) {
 			$('#darkestDungeon').removeClass('active');
 			$('#misc').addClass('active');
 		}
+		// Also randomize the order of the array of quotes.
 		$scope.randomize();
 	 }
-	 $scope.randomize();
+	 // Tweet button: opens the current quote in twitter's tweet intent.
 	 $scope.tweet = function(){
 		window.open("https://twitter.com/intent/tweet?&text=" + $scope.currentQuotes[$scope.index].quote + " ~ " + $scope.currentQuotes[$scope.index].author );
 	 }
