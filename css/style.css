@@ -118,6 +118,7 @@ button:focus {
 	max-width: 800px; 
 	margin: 0 auto; 
 	padding: 10px;  
+	
 }
 p{
 	margin: 0px; 
@@ -138,6 +139,7 @@ p{
   text-align: center;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  margin-bottom: 50px;
 }
 /* Media Queries */
  @media only screen and (max-width: 800px) {
