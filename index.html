@@ -27,7 +27,8 @@
 		<img src="images/rightQuote.png" id="quote-sign-bottom"> </img>
 		<p id="quote">{{currentQuotes[index].quote}}</p>
 	</div>
-	<p id="author">{{currentQuotes[index].author}}</p>
+	<a ng-href="{{currentQuotes[index].source}}" target="_blank"><p id="author">{{currentQuotes[index].author}}</p></a>
+
 <nav>
     <div id="ad"> Quote Generator by <a href="https://crumrinecoder.github.io/Profile-Website-version2/" id="nic"> Nicolas Crumrine</span></a> </div>
 	<button id="twitterButton" ng-click="tweet()" class="fa fa-twitter"> Share Quotes With Friends</button> 
