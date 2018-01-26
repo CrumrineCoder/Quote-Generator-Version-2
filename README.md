@@ -5,6 +5,7 @@ This is a front end project built as part of FreeCodeCamp's cirriculum. The webs
 ## To Do 
 
 * Change the color scheme depending on the source of the quotes
+	This probably won't work since I'm using a filter system unlike before where I was using only one source.
 
 ## User Stories
 
@@ -15,8 +16,9 @@ This is a front end project built as part of FreeCodeCamp's cirriculum. The webs
 
 ### Personal User Stories
 
-* User Story: I can get quotes from different sources.
 * User Story: I can also press the space bar to get a new quote.
+* User Story: I can filter which sources I want my quotes to come from.
+* User Story: I can click on a link to see the wikipedia page for the person who said the quote. 
 
 ## Built With
 
@@ -34,4 +36,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* I own none of these quotes of course. 
+* I own none of these quotes of course. I pulled mainly from the Elder Scrolls, Civilization, Discworld, and Darkest Dungeon series with Last of Us, Bioshock, and the Protomen filling up the majority of the miscellaneous section. 
