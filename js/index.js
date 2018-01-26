@@ -6,7 +6,7 @@ app.controller('quoteController', function($scope) {
 		quote: "Prodigious size alone does not dissuade the sharpened blade."
 	}, {
 		author: "The Ancestor",
-		quote: "Overconfidance is a slow and insidious killer."
+		quote: "Overconfidence is a slow and insidious killer."
 	}, {
 		author: "The Ancestor",
 		quote: "Glittering gold, trinkets and baubles... Paid for in blood."
