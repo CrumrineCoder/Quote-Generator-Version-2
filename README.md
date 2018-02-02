@@ -1,6 +1,8 @@
 # Quote Generator
 
-This is a front end project built as part of FreeCodeCamp's cirriculum. The website displays quotes to the user from five different arrays depending on the source and its author. The user can either click on the 'Generate New Quote' button or press the spacebar. The user can also press a button to tweet the quote. The array is randomized every time they change arrays and it loops over itself. I used Angular.JS to display the data. 
+This is a front end project built as part of FreeCodeCamp's cirriculum. The website displays quotes to the user from five different arrays depending on the source and its author. The user can either click on the 'Generate New Quote' button or press the spacebar. The user can also press a button to tweet the quote. The array is randomized every time they change arrays and it loops over itself.
+
+I displayed the data with Angular during the revision and experimented with using different sources for quotes and allowing users to pick those sources. I also experimented with changing color schemes depending on which sources were picked, but that didn't work when I decided users could have more than one source for quotes. I also wanted something where users can add quotes, but I think that's a future project at this point.
 
 ## To Do 
 
