@@ -338,7 +338,14 @@ app.controller('quoteController', function($scope) {
         type: "Civ",
         source: "https://en.wikipedia.org/wiki/John_Dewey"
     }];
-    $scope.discworldQuotes = [{
+    $scope.discworldQuotes = [
+	{
+		author: "Terry Pratchett",
+		quote: "Always remember that the crowd that applauds your coronation is the same crowd that will applaud your beheading. People like a show.",
+        type: "Disc",
+        source: "https://en.wikipedia.org/wiki/Terry_Pratchett"	
+	},
+	{
         author: "Terry Pratchett",
         quote: "\"The graveyards are full of people who rushed in bravely but unwisely.\" \n \"Ook.\" \n \"What did he say?\" \n \"He said 'the graveyards are full of everybody eventually'\".",
         type: "Disc",
@@ -370,6 +377,11 @@ app.controller('quoteController', function($scope) {
         source: "https://en.wikipedia.org/wiki/Terry_Pratchett"
     }, {
         author: "Terry Pratchett",
+        quote: "'Haven't you noticed that by running away you end up in more trouble?' \n 'Yes, but you see, you can run away from that, too,' said Rincewind. 'That's the beauty of the system. Dead is only for once, but running away is for ever.' \n 'Ah, but it is said that a coward dies a thousand deaths, while a hero dies only one.' \n 'Yes, but it's the important one.'",
+        type: "Disc",
+        source: "https://en.wikipedia.org/wiki/Terry_Pratchett"
+    }, {
+        author: "Terry Pratchett",
         quote: "YOU THINK SO? THEN TAKE THE UNIVERSE AND GRIND IT DOWN TO THE FINEST POWDER AND SIEVE IT THROUGH THE FINEST SIEVE AND THEN SHOW ME ONE ATOM OF JUSTICE, ONE MOLECULE OF MERCY. AND YET—Death waved a hand. AND YET YOU ACT AS IF THERE IS SOME IDEAL ORDER IN THE WORLD, AS IF THERE IS SOME...SOME RIGHTNESS IN THE UNIVERSE BY WHICH IT MAY BE JUDGED. \n \"Yes, but people have got to believe that, or what's the point—\" \n MY POINT EXACTLY. ",
         type: "Disc",
         source: "https://en.wikipedia.org/wiki/Terry_Pratchett"
@@ -384,6 +396,12 @@ app.controller('quoteController', function($scope) {
         type: "Disc",
         source: "https://en.wikipedia.org/wiki/Terry_Pratchett"
     }, {
+		author: "Terry Pratchett",
+        quote: "People's whole lives do pass in front of their eyes before they die. The process is called 'living'",
+        type: "Disc",
+        source: "https://en.wikipedia.org/wiki/Terry_Pratchett"
+		
+	},{
         author: "Oath of the Watchmen, Terry Pratchett",
         quote: "I comma square bracket recruit’s name square bracket comma do solemnly swear by square bracket recruit’s deity of choice square bracket to uphold the Laws and Ordinances of the city of Ankh-Morpork comma serve the public trust comma and defend the subjects of His stroke Her bracket delete whichever is inappropriate bracket Majesty bracket name of reigning monarch bracket without fear comma favor comma or thought of personal safety semicolon to pursue evildoers and protect the innocent comma laying down my life if neccessary in the cause of said duty comma so help me bracket aforesaid deity bracket full stop Gods Save the King stroke Queen bracket delete whichever is inappropriate bracket full stop.",
         type: "Disc",
