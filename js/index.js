@@ -752,12 +752,9 @@ app.controller('quoteController', function($scope) {
         quote: "Click on 'Get New Quote' above to get started. The five images above act as filters for various sources I pulled quotes from which can be turned on and off with a button click. The miscellaneous ('?') section is for sources that I didn't pull enough quotes from to warrant making a separate button. The order will be randomized and will loop over itself."
     };
     // Set of quotes to show to the user. The starting one is just the instructions on how to use the App. Then add the rest.
-    $scope.currentQuotes = [$scope.instruction];
-    $scope.currentQuotes = $scope.currentQuotes.concat($scope.elderScrollsQuotes);
-    $scope.currentQuotes = $scope.currentQuotes.concat($scope.civilizationQuotes);
-    $scope.currentQuotes = $scope.currentQuotes.concat($scope.discworldQuotes);
-    $scope.currentQuotes = $scope.currentQuotes.concat($scope.darkestDungeonQuotes);
-    $scope.currentQuotes = $scope.currentQuotes.concat($scope.miscQuotes);
+ //   $scope.currentQuotes = [$scope.instruction];
+	$scope.currentQuotes = [];
+    
     // Function stolen from the internet that will shuffle an array. Used for changing array of quotes.
     function shuffle(array) {
         var currentIndex = array.length,
@@ -778,6 +775,14 @@ app.controller('quoteController', function($scope) {
     $scope.randomize = function() {
         $scope.currentQuotes = shuffle($scope.currentQuotes);
     }
+	$scope.currentQuotes = $scope.currentQuotes.concat($scope.elderScrollsQuotes);
+    $scope.currentQuotes = $scope.currentQuotes.concat($scope.civilizationQuotes);
+    $scope.currentQuotes = $scope.currentQuotes.concat($scope.discworldQuotes);
+    $scope.currentQuotes = $scope.currentQuotes.concat($scope.darkestDungeonQuotes);
+    $scope.currentQuotes = $scope.currentQuotes.concat($scope.miscQuotes);
+	$scope.randomize();
+	$scope.currentQuotes.unshift($scope.instruction)
+
     $scope.checkFilters = function() {
         if ($scope.filters == 0) {
             $scope.currentQuotes = [$scope.instruction];
