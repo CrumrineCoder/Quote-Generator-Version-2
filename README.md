@@ -26,7 +26,7 @@ I displayed the data with Angular during the revision and experimented with usin
 
 * [Angular](https://angularjs.org/) - Used to display data.
 * [jQuery](https://jquery.com/) - Used to change HTML classes and other little things that I didn't need to rewrite functions for. 
-* [FontAwesome] (http://fontawesome.io/) - Used for various icons. Love these guys. 
+* [FontAwesome] (https://fontawesome.com/) - Used for various icons. Love these guys. 
 
 ##  Authors
 
