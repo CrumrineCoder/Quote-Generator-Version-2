@@ -2,28 +2,38 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Quote Generator Version 2</title>
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Varela+Round'>
-    <link rel="stylesheet" href="css/style.css"> 
+	<meta charset="UTF-8">
+	<title>Quote Generator Version 2</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Varela+Round'>
+	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-	
 
 
-<body ng-app="quoteApp" ng-controller="quoteController"> 
+
+<body ng-app="quoteApp" ng-controller="quoteController">
+	<nav>
+		<div id="ad"> Quote Generator by <a href="https://crumrinecoder.github.io/Profile-Website-version2/" id="nic"> Nicolas
+				Crumrine</span></a> </div>
+	</nav>
 	<div id="quoteButtonContainer">
-		<input type="image" src="images/elderScrolls.png" class="quoteButtons active" id="elderScrolls" ng-click="changeArray('ElderScrolls') ; checkFilters()" title="Elder Scrolls"/>
-		<input type="image" src="images/civilization.png" class="quoteButtons active" id="civilization" ng-click="changeArray('Civilization'); checkFilters()" title="Sid Meier's Civilization"/>
-		<input type="image" src="images/discworld.png" class="quoteButtons active" id="discworld" ng-click="changeArray('Discworld'); checkFilters()" title="Discworld" />
-		<input type="image" src="images/darkestDungeon.png" class="quoteButtons active" id="darkestDungeon" ng-click="changeArray('DarkestDungeon'); checkFilters()" title="Darkest Dungeon"/>
-		<input type="image" src="images/misc.png" class="quoteButtons active" id="misc" ng-click="changeArray('Misc'); checkFilters()" title="Other series with not enough quote for a button."/>
+		<input type="image" src="images/elderScrolls.png" class="quoteButtons active" id="elderScrolls" ng-click="changeArray('ElderScrolls') ; checkFilters()"
+		 title="Elder Scrolls" />
+		<input type="image" src="images/civilization.png" class="quoteButtons active" id="civilization" ng-click="changeArray('Civilization'); checkFilters()"
+		 title="Sid Meier's Civilization" />
+		<input type="image" src="images/discworld.png" class="quoteButtons active" id="discworld" ng-click="changeArray('Discworld'); checkFilters()"
+		 title="Discworld" />
+		<input type="image" src="images/darkestDungeon.png" class="quoteButtons active" id="darkestDungeon" ng-click="changeArray('DarkestDungeon'); checkFilters()"
+		 title="Darkest Dungeon" />
+		<input type="image" src="images/misc.png" class="quoteButtons active" id="misc" ng-click="changeArray('Misc'); checkFilters()"
+		 title="Other series with not enough quote for a button." />
 	</div>
 	<div id="generateContainer">
-		<button id="generateNewQuote" ng-click="index = (index + 1) % currentQuotes.length"><div id="large">Get New Quote</div><div id="small">(Spacebar or Click)</div></button>
+		<button id="generateNewQuote" ng-click="index = (index + 1) % currentQuotes.length"><div id="large">Get New Quote</div>
+			<div
+			 id="small">(Spacebar or Click)</div></button>
 		<br>
-		
 	</div>
 	<div id="quoteContainer">
 		<img src="images/leftQuote.png" id="quote-sign-top"> </img>
@@ -31,14 +41,13 @@
 		<p id="quote">{{currentQuotes[index].quote}}</p>
 	</div>
 	<a ng-href="{{currentQuotes[index].source}}" target="_blank"><p id="author">{{currentQuotes[index].author}}</p></a>
+	<button id="twitterButton" ng-click="tweet()"><i class="fab fa-twitter"></i>Share on Twitter</button>
 
-<nav>
-    <div id="ad"> Quote Generator by <a href="https://crumrinecoder.github.io/Profile-Website-version2/" id="nic"> Nicolas Crumrine</span></a> </div>
-	<button id="twitterButton" ng-click="tweet()" class="fa fa-twitter"> Share Quotes With Friends</button> 
-</nav>	
+
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>
-    <script src="js/index.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.6/angular.js'></script>
+	<script src="js/index.js"></script>
 
 </body>
+
 </html>

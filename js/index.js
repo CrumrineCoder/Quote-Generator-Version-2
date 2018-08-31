@@ -603,12 +603,12 @@ app.controller('quoteController', function($scope) {
         quote: "After all we've been through. Everything that I've done. It can't be for nothing.",
         type: "Misc",
         source: "https://en.wikipedia.org/wiki/The_Last_of_Us"
-    }, {
+    }/*, {
         author: "Andrew Ryan from Bioshock",
         quote: "What is the greatest lie every created? What is the most vicious obscenity ever perpetrated on mankind? Slavery? The Holocaust? Dictatorship? No. It's the tool with which all that wickedness is built: altruism. Whenever anyone wants others to do their work, they call upon their altruism. Never mind your own needs, they say, think of the needs of... of whoever. The state. The poor. Of the army, of the king, of God! The list goes on and on. How many catastrophes were launched with the words 'think of yourself'? It's the 'king and country' crowd who light the torch of destruction. It is this great inversion, this ancient lie, which has chained humanity to an endless cycle of guilt and failure. My journey to Rapture was my second exodus. In 1919, I fled a country that had traded in despotism for insanity. The Marxist revolution simply traded one lie for another. Instead of one man, the tsar, owning the work of all the people, all the people owned the work of all of the people. So, I came to America: where a man could own his own work, where a man could benefit from the brilliance of his own mind, the strength of his own muscles, the might of his own will. I had thought I had left the parasites of Moscow behind me. I had thought I had left the Marxist altruists to their collective farms and their five-year plans. But as the German fools threw themselves on Hitler's sword 'for the good of the Reich', the Americans drank deeper and deeper of the Bolshevik poison, spoon-fed to them by Roosevelt and his New Dealists. And so, I asked myself: in what country was there a place for men like me - men who refused to say \"yes\" to the parasites and the doubters, men who believed that work was sacred and property rights inviolate. And then one day, the happy answer came to me, my friends: there was no country for people like me! And that was the moment I decided... to build one.",
         type: "Misc",
         source: "https://en.wikipedia.org/wiki/BioShock"
-    }, {
+    }*/, {
         author: "Booker from Bioshock",
         quote: "A city at the bottom of the ocean? Ridiculous....",
         type: "Misc",
