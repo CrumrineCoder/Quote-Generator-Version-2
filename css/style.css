@@ -38,24 +38,27 @@ nav {
 #twitterButton{
 	margin: 0 auto;
     display: block; 
-    max-width: 400px;
-	padding: 3px 5px 3px 5px;
+	padding: 1em 2em;
 	border: 1px solid white;
-	letter-spacing: 0.2em; 
-	background: black; 
+	font-size: 14px; 
+	background: #575757; 
 	color: white;
 	-webkit-transition: color .5s;
 	-moz-transition: color .5s;
 	-ms-transition: color .5s;
 	-o-transition: color .5s;
 	transition: color .5s;
-	width: 90%; 
-	height: 52px; 
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
 	cursor: pointer; 
 }
 #twitterButton:hover{
    color: #1DA1F2;
    border: 1px solid #1DA1F2;
+}
+#twitterButton i{
+	margin-right: 15px; 
+	font-size: 14px; 
 }
 /* Quote Buttons */
 #quoteButtonContainer{
@@ -72,6 +75,11 @@ nav {
 	height: 100px; 
 	padding: 10px 20px; 
 	background: white; 
+	-webkit-transition: color .5s;
+	-moz-transition: color .5s;
+	-ms-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;
 }
 .quoteButtons:hover{
    
@@ -92,7 +100,15 @@ nav {
    border: none; 
    background: #575757; 
    color: white; 
-   padding: 3px 20px; ; 
+   padding: 3px 20px; 
+   cursor: pointer; 
+   -webkit-transition: color .5s;
+   -moz-transition: color .5s;
+   -ms-transition: color .5s;
+   -o-transition: color .5s;
+   transition: color .5s;
+   width: 300px; 
+   border-radius: 0px 0px 6px 6px; 
 }
 #large{
    font-size: 20px; 
@@ -101,9 +117,6 @@ nav {
    font-size: 12px; 
 }
 
-#generateNewQuote{
-width: 300px; 
-}
 #generateNewQuote:hover, #twitterButton:hover{
    background: #242424; 
 }
@@ -144,7 +157,7 @@ p{
  text-align: center;
  border-bottom-left-radius: 25px;
  border-bottom-right-radius: 25px;
- margin-bottom: 10px; 
+ margin-bottom: 30px; 
 }
 /* Media Queries */
 @media only screen and (max-width: 800px) {
