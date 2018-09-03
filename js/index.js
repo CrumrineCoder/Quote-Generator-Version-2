@@ -884,6 +884,9 @@ app.controller('quoteController', function($scope) {
     }
     // Tweet button: opens the current quote in twitter's tweet intent.
     $scope.tweet = function() {
-        window.open("https://twitter.com/intent/tweet?&text=" + $scope.currentQuotes[$scope.index].quote + " ~ " + $scope.currentQuotes[$scope.index].author);
+        var url ="https://twitter.com/share?url=" + encodeURIComponent(document.location);
+        var text = encodeURIComponent($scope.currentQuotes[$scope.index].quote + " ~ " + $scope.currentQuotes[$scope.index].author);
+        window.open(url + "&text=" + text);
+    //    window.open("https://twitter.com/intent/tweet?&text=" + $scope.currentQuotes[$scope.index].quote + " ~ " + $scope.currentQuotes[$scope.index].author);
     }
 });
